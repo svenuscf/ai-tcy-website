@@ -43,8 +43,9 @@ reconciliation before a production migration can be declared complete.
 ## Public review export
 
 The owner authorized a separate public review on 2026-09-28. Public repo:
-https://github.com/svenuscf/tcy-review. Intended Pages URL:
-https://svenuscf.github.io/tcy-review/.
+https://github.com/svenuscf/tcy-review. Live review URL:
+https://garywong.pro/tcy-review/. GitHub Pages inherits the existing account
+custom domain; the github.io project URL redirects there.
 
 `python3 scripts/export_review.py /private/tmp/tcy-review-publish` exports only
 website files and adjusts root-relative paths for the `/tcy-review` project URL.

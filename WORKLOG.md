@@ -83,5 +83,4 @@ was copied. Export script adjusts project paths and validates all local targets.
 Pages deployment 36375858322 completed successfully. Live HTTPS URL:
 https://garywong.pro/tcy-review/. GitHub automatically inherited the account's
 existing custom domain; no DNS or domain settings changed. All ten live pages
-and CSS/JS match the verified export byte-for-byte; homepage browser rendering
-confirmed. Working repository stays private; Wix remains unchanged.
+and CSS/JS return successfully; homepage browser rendering confirmed. Working repository stays private; Wix remains unchanged.
