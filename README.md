@@ -39,3 +39,15 @@ Repository remains private; Mr Tse's access will be arranged later. No public
 hosting, Wix edits, DNS change, or production switch has been performed. This is a
 design review build. Hidden pages and the two native CMS collections still need
 reconciliation before a production migration can be declared complete.
+
+## Public review export
+
+The owner authorized a separate public review on 2026-09-28. Public repo:
+https://github.com/svenuscf/tcy-review. Intended Pages URL:
+https://svenuscf.github.io/tcy-review/.
+
+`python3 scripts/export_review.py /private/tmp/tcy-review-publish` exports only
+website files and adjusts root-relative paths for the `/tcy-review` project URL.
+It also checks that every local asset and page target exists. Publish the export
+on the public repo's `main` branch; GitHub Pages serves its root. Never copy the
+working repository's inventory, notes, or git history into the public repo.

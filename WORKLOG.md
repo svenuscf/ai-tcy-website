@@ -71,3 +71,17 @@ Removed the oversized qin close-up from both language homepages after owner feed
 Reduced the hero spacing and gave the title full width. The portrait and publication
 covers remain. Original downloaded image is retained in the media archive. Rebuilt
 all pages; the 250-block text/link and local-asset checks pass.
+
+## 2026-09-28 — Public review published
+
+Owner authorized publishing the current build for Mr Tse's review. GitHub Free
+cannot publish Pages directly from the private working repo, so created separate
+public `svenuscf/tcy-review` containing only website files, README, robots.txt and
+.nojekyll. Initial public commit e8b9a1c. No private inventory or working history
+was copied. Export script adjusts project paths and validates all local targets.
+
+Pages deployment 36375858322 completed successfully. Live HTTPS URL:
+https://garywong.pro/tcy-review/. GitHub automatically inherited the account's
+existing custom domain; no DNS or domain settings changed. All ten live pages
+and CSS/JS match the verified export byte-for-byte; homepage browser rendering
+confirmed. Working repository stays private; Wix remains unchanged.
