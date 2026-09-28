@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Wix Site API call successful: {\"folders\":[],\"nextCursor\":{\"cursors\":{\"next\":\"\"},\"hasNext\":false}}"
+    }
+  ],
+  "isError": false
+}

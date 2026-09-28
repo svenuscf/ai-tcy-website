@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Wix Site API call successful: {\"folders\":[{\"id\":\"baeeb4916a9d48cea1232f1a0239ff47\",\"displayName\":\"MP3\",\"parentFolderId\":\"media-root\",\"createdDate\":\"2022-01-12T16:22:34.000Z\",\"updatedDate\":\"2022-01-12T16:22:34.000Z\",\"state\":\"OK\",\"namespace\":\"NO_NAMESPACE\",\"siteId\":\"aac32e79-b06c-4e40-bf49-8cb31b2ebc69\"},{\"id\":\"ba170bef4bcf41ed8a36c25e684b90d8\",\"displayName\":\"Papers\",\"parentFolderId\":\"media-root\",\"createdDate\":\"2021-12-19T06:33:33.000Z\",\"updatedDate\":\"2021-12-19T06:33:33.000Z\",\"state\":\"OK\",\"namespace\":\"NO_NAMESPACE\",\"siteId\":\"aac32e79-b06c-4e40-bf49-8cb31b2ebc69\"},{\"id\":\"54761a93edbc46b7bc13ddbaf84ad898\",\"displayName\":\"Scores\",\"parentFolderId\":\"media-root\",\"createdDate\":\"2021-12-19T05:21:48.000Z\",\"updatedDate\":\"2021-12-19T05:21:48.000Z\",\"state\":\"OK\",\"namespace\":\"NO_NAMESPACE\",\"siteId\":\"aac32e79-b06c-4e40-bf49-8cb31b2ebc69\"},{\"id\":\"b15b6187da714ddc81774fa235eecf00\",\"displayName\":\"Photos\",\"parentFolderId\":\"media-root\",\"createdDate\":\"2021-10-12T11:49:07.000Z\",\"updatedDate\":\"2021-10-12T11:49:07.000Z\",\"state\":\"OK\",\"namespace\":\"NO_NAMESPACE\",\"siteId\":\"aac32e79-b06c-4e40-bf49-8cb31b2ebc69\"}],\"nextCursor\":{\"cursors\":{\"next\":\"\"},\"hasNext\":false}}"
+    }
+  ],
+  "isError": false
+}
