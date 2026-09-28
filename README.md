@@ -16,7 +16,9 @@ The library provides publication-year navigation, full-text search, and expandab
 
 ## Source preservation and media
 
-All 250 original rich-text components retain their exact decoded text. Interface
+The 250 original rich-text components retain their decoded text, except for the
+explicitly approved copyright update from 2022 to 2026. A separate AI management
+credit has also been added. Interface
 labels are separate. Original link targets are retained as provenance where local
 page navigation replaces a Wix page URL. Scores continue to link to their original PDFs.
 
@@ -35,8 +37,8 @@ Videos require YouTube access; no video files are rehosted. Media has no new lic
 
 ## Review boundary
 
-Repository remains private; Mr Tse's access will be arranged later. No public
-hosting, Wix edits, DNS change, or production switch has been performed. This is a
+Repository remains private; Mr Tse's access will be arranged later. A separate public review is published as described below. No Wix edits, DNS
+change, or production switch has been performed. This is a
 design review build. Hidden pages and the two native CMS collections still need
 reconciliation before a production migration can be declared complete.
 
@@ -52,3 +54,8 @@ website files and adjusts root-relative paths for the `/tcy-review` project URL.
 It also checks that every local asset and page target exists. Publish the export
 on the public repo's `main` branch; GitHub Pages serves its root. Never copy the
 working repository's inventory, notes, or git history into the public repo.
+
+## Agent handoff
+
+See `AGENT-HANDOFF.md` for the shareable project status, maintenance workflow,
+publishing instructions, and Wix migration approval boundaries.

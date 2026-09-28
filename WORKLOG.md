@@ -93,3 +93,11 @@ and Wong Chun-Fung acknowledgments, including the historical 2022 design date.
 Frozen source snapshots remain unchanged. Validation explicitly permits only the
 two copyright-year substitutions; the new management sentence is separate from
 source text. This supersedes verbatim preservation for the copyright year only.
+
+## 2026-09-28 — Shareable agent handoff
+
+Prepared AGENT-HANDOFF.md for Gary to share with Mr Tse or another assistant.
+Includes portable build/export instructions, approved design and content decisions,
+access/ownership boundaries, remaining migration gaps, and a practical maintenance
+workflow. Corrected outdated README statements about public hosting and copyright
+preservation. No website content or hosting changes in this documentation update.
