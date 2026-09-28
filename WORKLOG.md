@@ -42,3 +42,25 @@ Next actions:
 3. Map each academic bibliography and full abstract to its source component; flag ambiguous splits rather than rewriting text.
 4. Build the local paper-library MVP with year grouping, search, and expandable full abstracts, then verify source-to-view text and links.
 5. Resolve the concrete repository and preview destination before requesting approval for external publishing.
+
+## 2026-09-28 — Bilingual design preview and original media
+
+Built ten static pages, preserving 250 source text components verbatim and all
+rich-text anchor targets (local route rewrites retain original target metadata).
+Added publication-year browsing, text search, expandable abstracts and mobile navigation.
+Removed the header 琴 badge at the owner's request.
+
+Following authorization to download Wix media, captured the public published
+component data for all ten pages. Mapped players through the component hierarchy
+to original text blocks. Downloaded 20 distinct audio recordings and seven original
+images (portrait, qin detail, five covers); embedded 13 original YouTube videos.
+Per-language instances share the same local files. No Wix modification occurred.
+
+Validation: generated HTML passes checks for all 250 exact text blocks, original
+rich-text link targets, local route/asset existence and no nested anchors. JavaScript
+syntax passes. Browser checks: first recording starts and pauses; first YouTube
+thumbnail renders; Messiaen search returns one paper, no-match search shows empty
+state, 2023 filter returns six, expand abstracts works. Mobile DOM at 390px has no
+horizontal overflow and navigation expands. Desktop homepage visually checked.
+YouTube playback for every video and every full audio track has not been audited.
+Native CMS records and potential hidden pages remain pending for migration completeness.

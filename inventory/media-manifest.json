@@ -1,0 +1,1163 @@
+{
+  "capture_date": "2026-09-28",
+  "mapping_method": "Published Wix component hierarchy; no filename-only audio matching. Original source links retained.",
+  "pages": {
+    "zh-compositions": [
+      {
+        "component_id": "comp-mqov6uvu",
+        "source_text_ids": [
+          "comp-mqov6uvo6"
+        ],
+        "source_container_id": "comp-mqov6uvn4",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/zh-compositions-features.json",
+        "tracks": [
+          {
+            "title": "短松岡",
+            "artist": "",
+            "url": "https://music.wixstatic.com/mp3/7a7959_cb9e5bdbbf4a48118fecb893f75c10d9-320.mp3",
+            "local_url": "/media/audio/7a7959_cb9e5bdbbf4a48118fecb893f75c10d9-320.mp3",
+            "duration": 335
+          }
+        ]
+      },
+      {
+        "component_id": "comp-m6okfo9f",
+        "source_text_ids": [
+          "comp-ls5ztoar1"
+        ],
+        "source_container_id": "comp-ls5ztoan1",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/zh-compositions-features.json",
+        "tracks": [
+          {
+            "title": "霜滿天",
+            "artist": "",
+            "url": "https://music.wixstatic.com/mp3/7a7959_81db303fc8dd4a50bc9ecaeb57160b57-320.mp3",
+            "local_url": "/media/audio/7a7959_81db303fc8dd4a50bc9ecaeb57160b57-320.mp3",
+            "duration": 282
+          }
+        ]
+      },
+      {
+        "component_id": "comp-m2pes33i3",
+        "source_text_ids": [
+          "comp-m2pes33g"
+        ],
+        "source_container_id": "comp-m2pes33e1",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/zh-compositions-features.json",
+        "tracks": [
+          {
+            "title": "望月懷遠",
+            "artist": "",
+            "url": "https://music.wixstatic.com/mp3/7a7959_321df54b8a574934940166dc315345e2.mp3",
+            "local_url": "/media/audio/7a7959_321df54b8a574934940166dc315345e2.mp3",
+            "duration": 168
+          }
+        ]
+      },
+      {
+        "component_id": "comp-kxf8cop6",
+        "source_text_ids": [
+          "comp-kxbtjc6e"
+        ],
+        "source_container_id": "comp-kxbtjc6c1",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/zh-compositions-features.json",
+        "url": "https://www.youtube.com/watch?v=-LUPf6HUix4"
+      },
+      {
+        "component_id": "comp-kycdgqdx",
+        "source_text_ids": [
+          "comp-ky5pyrud"
+        ],
+        "source_container_id": "comp-ky5pvon6",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/zh-compositions-features.json",
+        "tracks": [
+          {
+            "title": "1",
+            "artist": "",
+            "url": "https://music.wixstatic.com/mp3/7a7959_b811a0b805a346fab4e253fc23347812.mp3",
+            "local_url": "/media/audio/7a7959_b811a0b805a346fab4e253fc23347812.mp3",
+            "duration": 101
+          }
+        ]
+      },
+      {
+        "component_id": "comp-kycdi7qo",
+        "source_text_ids": [
+          "comp-ky5pyrud"
+        ],
+        "source_container_id": "comp-ky5pvon6",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/zh-compositions-features.json",
+        "tracks": [
+          {
+            "title": "2",
+            "artist": "",
+            "url": "https://music.wixstatic.com/mp3/7a7959_bd945ef20398412b96f4c8528fff92c2.mp3",
+            "local_url": "/media/audio/7a7959_bd945ef20398412b96f4c8528fff92c2.mp3",
+            "duration": 84
+          }
+        ]
+      },
+      {
+        "component_id": "comp-kycdia9p",
+        "source_text_ids": [
+          "comp-ky5pyrud"
+        ],
+        "source_container_id": "comp-ky5pvon6",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/zh-compositions-features.json",
+        "tracks": [
+          {
+            "title": "3",
+            "artist": "",
+            "url": "https://music.wixstatic.com/mp3/7a7959_99bae433a14e4081965c2981bf4ce21a.mp3",
+            "local_url": "/media/audio/7a7959_99bae433a14e4081965c2981bf4ce21a.mp3",
+            "duration": 99
+          }
+        ]
+      },
+      {
+        "component_id": "comp-kycd4ktg",
+        "source_text_ids": [
+          "comp-kxbth4591"
+        ],
+        "source_container_id": "comp-kxbth4571",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/zh-compositions-features.json",
+        "url": "https://www.youtube.com/watch?v=2yFyhDYiWSA"
+      },
+      {
+        "component_id": "comp-kycd6bwm",
+        "source_text_ids": [
+          "comp-kxbtem891"
+        ],
+        "source_container_id": "comp-kxbtem871",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/zh-compositions-features.json",
+        "url": "https://www.youtube.com/watch?v=OfepF3Dn3cc"
+      },
+      {
+        "component_id": "comp-kycd8lz6",
+        "source_text_ids": [
+          "comp-kxbtbzrp2"
+        ],
+        "source_container_id": "comp-kxbtbzrm1",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/zh-compositions-features.json",
+        "url": "https://www.youtube.com/watch?v=gKsh-c9Nk70"
+      },
+      {
+        "component_id": "comp-kycd96n4",
+        "source_text_ids": [
+          "comp-kxbt945y2"
+        ],
+        "source_container_id": "comp-kxbt945x",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/zh-compositions-features.json",
+        "url": "https://www.youtube.com/watch?v=A2W-VGpS9Yw"
+      },
+      {
+        "component_id": "comp-kycdaegi",
+        "source_text_ids": [
+          "comp-kxbt6ji82"
+        ],
+        "source_container_id": "comp-kxbt6ji5",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/zh-compositions-features.json",
+        "url": "https://www.youtube.com/watch?v=WXCP4uixJzA"
+      },
+      {
+        "component_id": "comp-kycdbtpj",
+        "source_text_ids": [
+          "comp-kxbt2bko1"
+        ],
+        "source_container_id": "comp-kxbt2bkm2",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/zh-compositions-features.json",
+        "url": "https://www.youtube.com/watch?v=MoqLFLT1ypw"
+      },
+      {
+        "component_id": "comp-kycdct8k",
+        "source_text_ids": [
+          "comp-kxbszzk0"
+        ],
+        "source_container_id": "comp-kxbszzjs1",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/zh-compositions-features.json",
+        "url": "https://www.youtube.com/watch?v=XgzLMMS3qmE"
+      },
+      {
+        "component_id": "comp-kycdf9zr",
+        "source_text_ids": [
+          "comp-kxbswdb5"
+        ],
+        "source_container_id": "comp-kxbswdb31",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/zh-compositions-features.json",
+        "url": "https://www.youtube.com/watch?v=NA95SRZtlVI"
+      },
+      {
+        "component_id": "comp-kydzeq9n",
+        "source_text_ids": [
+          "comp-kw73crtc"
+        ],
+        "source_container_id": "comp-kw73crt9",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/zh-compositions-features.json",
+        "tracks": [
+          {
+            "title": "秋日遊",
+            "artist": "姚錫安演奏",
+            "url": "https://music.wixstatic.com/mp3/54385b_88769b00bd074733b3e88efa199c7f3d.mp3",
+            "local_url": "/media/audio/54385b_88769b00bd074733b3e88efa199c7f3d.mp3",
+            "duration": 271
+          }
+        ]
+      },
+      {
+        "component_id": "comp-kycde8iu",
+        "source_text_ids": [
+          "comp-kw7385m7"
+        ],
+        "source_container_id": "comp-kw7358e7",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/zh-compositions-features.json",
+        "url": "https://www.youtube.com/watch?v=O-gfXyNxaVQ"
+      }
+    ],
+    "zh-reconstruction": [
+      {
+        "component_id": "comp-mryjtaxz",
+        "source_text_ids": [
+          "comp-mryjqdm06",
+          "comp-mryjqdm61"
+        ],
+        "source_container_id": "comp-mryjqdm0",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/zh-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "西麓堂洞庭秋思",
+            "artist": "謝俊仁演奏",
+            "url": "https://music.wixstatic.com/mp3/7a7959_eb8fca4c4b584513bc1a3e7931f035fa-320.mp3",
+            "local_url": "/media/audio/7a7959_eb8fca4c4b584513bc1a3e7931f035fa-320.mp3",
+            "duration": 221
+          }
+        ]
+      },
+      {
+        "component_id": "comp-lyc2ygrz",
+        "source_text_ids": [
+          "comp-lt3jx1a2",
+          "comp-lt3jx1a9"
+        ],
+        "source_container_id": "comp-lt3jx1a0",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/zh-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "閨怨操",
+            "artist": "謝俊仁演奏",
+            "url": "https://music.wixstatic.com/mp3/7a7959_7777f975bcef487d9066be50040e2394.mp3",
+            "local_url": "/media/audio/7a7959_7777f975bcef487d9066be50040e2394.mp3",
+            "duration": 163
+          }
+        ]
+      },
+      {
+        "component_id": "comp-lnhb7vv7",
+        "source_text_ids": [
+          "comp-lnhb4sns",
+          "comp-lnhb4snt1"
+        ],
+        "source_container_id": "comp-lnhb4snq1",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/zh-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "春江",
+            "artist": "謝俊仁演奏",
+            "url": "https://music.wixstatic.com/mp3/7a7959_5ce8f05799464b5daab827bca0e3486e.mp3",
+            "local_url": "/media/audio/7a7959_5ce8f05799464b5daab827bca0e3486e.mp3",
+            "duration": 371
+          }
+        ]
+      },
+      {
+        "component_id": "comp-lyc2xl4q",
+        "source_text_ids": [
+          "comp-lhvynuix4",
+          "comp-lhvynuiz"
+        ],
+        "source_container_id": "comp-lhvynuiu2",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/zh-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "懷古吟",
+            "artist": "謝俊仁演奏",
+            "url": "https://music.wixstatic.com/mp3/7a7959_f1b204aac8094d65a6b14270be518541.mp3",
+            "local_url": "/media/audio/7a7959_f1b204aac8094d65a6b14270be518541.mp3",
+            "duration": 165
+          }
+        ]
+      },
+      {
+        "component_id": "comp-ml3awlea",
+        "source_text_ids": [
+          "comp-lhvymvg4",
+          "comp-lhvymvg6"
+        ],
+        "source_container_id": "comp-lhvymvg11",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/zh-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "長清",
+            "artist": "林旭文演奏",
+            "url": "https://music.wixstatic.com/mp3/7a7959_599d2a81445d47bfa31f769f7fcae838-320.mp3",
+            "local_url": "/media/audio/7a7959_599d2a81445d47bfa31f769f7fcae838-320.mp3",
+            "duration": 466
+          }
+        ]
+      },
+      {
+        "component_id": "comp-lnhba3mo",
+        "source_text_ids": [
+          "comp-kyc9fszj",
+          "comp-kyc9fgy0"
+        ],
+        "source_container_id": "comp-kyc9ejl0",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/zh-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "離騷",
+            "artist": "林旭文演奏",
+            "url": "https://music.wixstatic.com/mp3/7a7959_67a67ec3732440699dee5ba779605d1e.mp3",
+            "local_url": "/media/audio/7a7959_67a67ec3732440699dee5ba779605d1e.mp3",
+            "duration": 728
+          }
+        ]
+      },
+      {
+        "component_id": "comp-lauugyjo",
+        "source_text_ids": [
+          "comp-kyc9gyy2",
+          "comp-kyc9gyyz"
+        ],
+        "source_container_id": "comp-kyc9glr8",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/zh-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "大雅",
+            "artist": "謝俊仁演奏",
+            "url": "https://music.wixstatic.com/mp3/7a7959_053504c82a9941099065c98c11406c96.mp3",
+            "local_url": "/media/audio/7a7959_053504c82a9941099065c98c11406c96.mp3",
+            "duration": 457
+          }
+        ]
+      },
+      {
+        "component_id": "comp-kycbqgik",
+        "source_text_ids": [
+          "comp-kyc9j1sx",
+          "comp-kyc9j1sv1"
+        ],
+        "source_container_id": "comp-kyc9j1st",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/zh-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "玄默",
+            "artist": "謝俊仁演奏",
+            "url": "https://music.wixstatic.com/mp3/7a7959_1bd11b7c45e648fda9efc9f10575b060.mp3",
+            "local_url": "/media/audio/7a7959_1bd11b7c45e648fda9efc9f10575b060.mp3",
+            "duration": 356
+          }
+        ]
+      },
+      {
+        "component_id": "comp-kycbk7zx",
+        "source_text_ids": [
+          "comp-kyc9lct5",
+          "comp-kyc9l6cj"
+        ],
+        "source_container_id": "comp-kyc9kg2v",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/zh-reconstruction-features.json",
+        "url": "https://www.youtube.com/watch?v=NJbs1uctSY8&t=6s"
+      },
+      {
+        "component_id": "comp-kycbsgse",
+        "source_text_ids": [
+          "comp-kyc9n6en2",
+          "comp-kyc9n6eo3"
+        ],
+        "source_container_id": "comp-kyc9n6el",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/zh-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "渭濱吟",
+            "artist": "謝俊仁演奏",
+            "url": "https://music.wixstatic.com/mp3/7a7959_4078f11e3559498083483e3f8c63aaff.mp3",
+            "local_url": "/media/audio/7a7959_4078f11e3559498083483e3f8c63aaff.mp3",
+            "duration": 212
+          }
+        ]
+      },
+      {
+        "component_id": "comp-kycbovpz",
+        "source_text_ids": [
+          "comp-kyc9ps5u2",
+          "comp-kyc9ps5v2"
+        ],
+        "source_container_id": "comp-kyc9ps5s",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/zh-reconstruction-features.json",
+        "url": "https://www.youtube.com/watch?v=1q3WwkGfTrA"
+      },
+      {
+        "component_id": "comp-kycbnvb9",
+        "source_text_ids": [
+          "comp-kyc9qy3x2",
+          "comp-kyc9qy3y2"
+        ],
+        "source_container_id": "comp-kyc9qy3w",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/zh-reconstruction-features.json",
+        "url": "https://www.youtube.com/watch?v=mH7qeByWqb0&t=38s"
+      },
+      {
+        "component_id": "comp-kycc966q",
+        "source_text_ids": [
+          "comp-kyc9vl2t1",
+          "comp-kyc9vl2v"
+        ],
+        "source_container_id": "comp-kyc9vl2r",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/zh-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "宋玉悲秋",
+            "artist": "謝俊仁演奏",
+            "url": "https://music.wixstatic.com/mp3/7a7959_5f2bd9aad86c466091daa5751b74a3b0.mp3",
+            "local_url": "/media/audio/7a7959_5f2bd9aad86c466091daa5751b74a3b0.mp3",
+            "duration": 393
+          }
+        ]
+      },
+      {
+        "component_id": "comp-kycbtecb",
+        "source_text_ids": [
+          "comp-kyca0w7b",
+          "comp-kyca0w7c3"
+        ],
+        "source_container_id": "comp-kyca0w782",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/zh-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "漢宮秋",
+            "artist": "謝俊仁演奏",
+            "url": "https://music.wixstatic.com/mp3/7a7959_7cbace995c3642869c2699c1e6b9c43c.mp3",
+            "local_url": "/media/audio/7a7959_7cbace995c3642869c2699c1e6b9c43c.mp3",
+            "duration": 438
+          }
+        ]
+      },
+      {
+        "component_id": "comp-kycbulfv",
+        "source_text_ids": [
+          "comp-kyca1to22",
+          "comp-kyca1to41"
+        ],
+        "source_container_id": "comp-kyca1to1",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/zh-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "洞庭秋思",
+            "artist": "黃振豐演奏",
+            "url": "https://music.wixstatic.com/mp3/7a7959_792d82998362464fb3312c8f4ba6b8c1.mp3",
+            "local_url": "/media/audio/7a7959_792d82998362464fb3312c8f4ba6b8c1.mp3",
+            "duration": 260
+          }
+        ]
+      },
+      {
+        "component_id": "comp-kyhel7s8",
+        "source_text_ids": [
+          "comp-kyca2lxu4",
+          "comp-kyca2lxw"
+        ],
+        "source_container_id": "comp-kyca2lxt",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/zh-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "白雪",
+            "artist": "謝俊仁演奏",
+            "url": "https://music.wixstatic.com/mp3/7a7959_971f635e343940fda0265c5aedcd7a14.mp3",
+            "local_url": "/media/audio/7a7959_971f635e343940fda0265c5aedcd7a14.mp3",
+            "duration": 373
+          }
+        ]
+      }
+    ],
+    "en-compositions": [
+      {
+        "component_id": "comp-mqov6uvu",
+        "source_text_ids": [
+          "comp-mqov6uvo6"
+        ],
+        "source_container_id": "comp-mqov6uvn4",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/en-compositions-features.json",
+        "tracks": [
+          {
+            "title": "At the Short-Pines Hill",
+            "artist": "",
+            "url": "https://music.wixstatic.com/mp3/7a7959_cb9e5bdbbf4a48118fecb893f75c10d9-320.mp3",
+            "local_url": "/media/audio/7a7959_cb9e5bdbbf4a48118fecb893f75c10d9-320.mp3",
+            "duration": 335
+          }
+        ]
+      },
+      {
+        "component_id": "comp-m6okfo9f",
+        "source_text_ids": [
+          "comp-ls5ztoar1"
+        ],
+        "source_container_id": "comp-ls5ztoan1",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/en-compositions-features.json",
+        "tracks": [
+          {
+            "title": "Frosty Sky",
+            "artist": "",
+            "url": "https://music.wixstatic.com/mp3/7a7959_81db303fc8dd4a50bc9ecaeb57160b57-320.mp3",
+            "local_url": "/media/audio/7a7959_81db303fc8dd4a50bc9ecaeb57160b57-320.mp3",
+            "duration": 282
+          }
+        ]
+      },
+      {
+        "component_id": "comp-m2pes33i3",
+        "source_text_ids": [
+          "comp-m2pes33g"
+        ],
+        "source_container_id": "comp-m2pes33e1",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/en-compositions-features.json",
+        "tracks": [
+          {
+            "title": "Longing from Afar in a Moonlit Night",
+            "artist": "",
+            "url": "https://music.wixstatic.com/mp3/7a7959_321df54b8a574934940166dc315345e2.mp3",
+            "local_url": "/media/audio/7a7959_321df54b8a574934940166dc315345e2.mp3",
+            "duration": 168
+          }
+        ]
+      },
+      {
+        "component_id": "comp-kxf8cop6",
+        "source_text_ids": [
+          "comp-kxbtjc6e"
+        ],
+        "source_container_id": "comp-kxbtjc6c1",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/en-compositions-features.json",
+        "url": "https://www.youtube.com/watch?v=-LUPf6HUix4"
+      },
+      {
+        "component_id": "comp-kycdgqdx",
+        "source_text_ids": [
+          "comp-ky5pyrud"
+        ],
+        "source_container_id": "comp-ky5pvon6",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/en-compositions-features.json",
+        "tracks": [
+          {
+            "title": "1",
+            "artist": "",
+            "url": "https://music.wixstatic.com/mp3/7a7959_b811a0b805a346fab4e253fc23347812.mp3",
+            "local_url": "/media/audio/7a7959_b811a0b805a346fab4e253fc23347812.mp3",
+            "duration": 101
+          }
+        ]
+      },
+      {
+        "component_id": "comp-kycdi7qo",
+        "source_text_ids": [
+          "comp-ky5pyrud"
+        ],
+        "source_container_id": "comp-ky5pvon6",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/en-compositions-features.json",
+        "tracks": [
+          {
+            "title": "2",
+            "artist": "",
+            "url": "https://music.wixstatic.com/mp3/7a7959_bd945ef20398412b96f4c8528fff92c2.mp3",
+            "local_url": "/media/audio/7a7959_bd945ef20398412b96f4c8528fff92c2.mp3",
+            "duration": 84
+          }
+        ]
+      },
+      {
+        "component_id": "comp-kycdia9p",
+        "source_text_ids": [
+          "comp-ky5pyrud"
+        ],
+        "source_container_id": "comp-ky5pvon6",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/en-compositions-features.json",
+        "tracks": [
+          {
+            "title": "3",
+            "artist": "",
+            "url": "https://music.wixstatic.com/mp3/7a7959_99bae433a14e4081965c2981bf4ce21a.mp3",
+            "local_url": "/media/audio/7a7959_99bae433a14e4081965c2981bf4ce21a.mp3",
+            "duration": 99
+          }
+        ]
+      },
+      {
+        "component_id": "comp-kycd4ktg",
+        "source_text_ids": [
+          "comp-kxbth4591"
+        ],
+        "source_container_id": "comp-kxbth4571",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/en-compositions-features.json",
+        "url": "https://www.youtube.com/watch?v=2yFyhDYiWSA"
+      },
+      {
+        "component_id": "comp-kycd6bwm",
+        "source_text_ids": [
+          "comp-kxbtem891"
+        ],
+        "source_container_id": "comp-kxbtem871",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/en-compositions-features.json",
+        "url": "https://www.youtube.com/watch?v=OfepF3Dn3cc"
+      },
+      {
+        "component_id": "comp-kycd8lz6",
+        "source_text_ids": [
+          "comp-kxbtbzrp2"
+        ],
+        "source_container_id": "comp-kxbtbzrm1",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/en-compositions-features.json",
+        "url": "https://www.youtube.com/watch?v=gKsh-c9Nk70"
+      },
+      {
+        "component_id": "comp-kycd96n4",
+        "source_text_ids": [
+          "comp-kxbt945y2"
+        ],
+        "source_container_id": "comp-kxbt945x",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/en-compositions-features.json",
+        "url": "https://www.youtube.com/watch?v=A2W-VGpS9Yw"
+      },
+      {
+        "component_id": "comp-kycdaegi",
+        "source_text_ids": [
+          "comp-kxbt6ji82"
+        ],
+        "source_container_id": "comp-kxbt6ji5",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/en-compositions-features.json",
+        "url": "https://www.youtube.com/watch?v=WXCP4uixJzA"
+      },
+      {
+        "component_id": "comp-kycdbtpj",
+        "source_text_ids": [
+          "comp-kxbt2bko1"
+        ],
+        "source_container_id": "comp-kxbt2bkm2",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/en-compositions-features.json",
+        "url": "https://www.youtube.com/watch?v=MoqLFLT1ypw"
+      },
+      {
+        "component_id": "comp-kycdct8k",
+        "source_text_ids": [
+          "comp-kxbszzk0"
+        ],
+        "source_container_id": "comp-kxbszzjs1",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/en-compositions-features.json",
+        "url": "https://www.youtube.com/watch?v=XgzLMMS3qmE"
+      },
+      {
+        "component_id": "comp-kycdf9zr",
+        "source_text_ids": [
+          "comp-kxbswdb5"
+        ],
+        "source_container_id": "comp-kxbswdb31",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/en-compositions-features.json",
+        "url": "https://www.youtube.com/watch?v=NA95SRZtlVI"
+      },
+      {
+        "component_id": "comp-kydzeq9n",
+        "source_text_ids": [
+          "comp-kw73crtc"
+        ],
+        "source_container_id": "comp-kw73crt9",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/en-compositions-features.json",
+        "tracks": [
+          {
+            "title": "Promenade on an Autumn Day",
+            "artist": "Played by John Yiu Shek-On",
+            "url": "https://music.wixstatic.com/mp3/54385b_88769b00bd074733b3e88efa199c7f3d.mp3",
+            "local_url": "/media/audio/54385b_88769b00bd074733b3e88efa199c7f3d.mp3",
+            "duration": 271
+          }
+        ]
+      },
+      {
+        "component_id": "comp-kycde8iu",
+        "source_text_ids": [
+          "comp-kw7385m7"
+        ],
+        "source_container_id": "comp-kw7358e7",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/en-compositions-features.json",
+        "url": "https://www.youtube.com/watch?v=O-gfXyNxaVQ"
+      }
+    ],
+    "en-reconstruction": [
+      {
+        "component_id": "comp-mryjtaxz",
+        "source_text_ids": [
+          "comp-mryjqdm06",
+          "comp-mryjqdm61"
+        ],
+        "source_container_id": "comp-mryjqdm0",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/en-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "Dongting qiusi (Autumn Thoughts at Lake Dongting) (Xilutang version)",
+            "artist": "Played by Tse Chun-Yan",
+            "url": "https://music.wixstatic.com/mp3/7a7959_eb8fca4c4b584513bc1a3e7931f035fa-320.mp3",
+            "local_url": "/media/audio/7a7959_eb8fca4c4b584513bc1a3e7931f035fa-320.mp3",
+            "duration": 221
+          }
+        ]
+      },
+      {
+        "component_id": "comp-lyc2ygrz",
+        "source_text_ids": [
+          "comp-lt3jx1a2",
+          "comp-lt3jx1a9"
+        ],
+        "source_container_id": "comp-lt3jx1a0",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/en-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "Guiyuan cao",
+            "artist": "Played by Tse Chun-Yan",
+            "url": "https://music.wixstatic.com/mp3/7a7959_7777f975bcef487d9066be50040e2394.mp3",
+            "local_url": "/media/audio/7a7959_7777f975bcef487d9066be50040e2394.mp3",
+            "duration": 163
+          }
+        ]
+      },
+      {
+        "component_id": "comp-lnhb7vv7",
+        "source_text_ids": [
+          "comp-lnhb4sns",
+          "comp-lnhb4snt1"
+        ],
+        "source_container_id": "comp-lnhb4snq1",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/en-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "Chunjiang",
+            "artist": "Played by Tse Chun-Yan",
+            "url": "https://music.wixstatic.com/mp3/7a7959_5ce8f05799464b5daab827bca0e3486e.mp3",
+            "local_url": "/media/audio/7a7959_5ce8f05799464b5daab827bca0e3486e.mp3",
+            "duration": 371
+          }
+        ]
+      },
+      {
+        "component_id": "comp-lyc2xl4q",
+        "source_text_ids": [
+          "comp-lhvynuix4",
+          "comp-lhvynuiz"
+        ],
+        "source_container_id": "comp-lhvynuiu2",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/en-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "Huaigu yin",
+            "artist": "Played by Tse Chun-Yan",
+            "url": "https://music.wixstatic.com/mp3/7a7959_f1b204aac8094d65a6b14270be518541.mp3",
+            "local_url": "/media/audio/7a7959_f1b204aac8094d65a6b14270be518541.mp3",
+            "duration": 165
+          }
+        ]
+      },
+      {
+        "component_id": "comp-ml3awlea",
+        "source_text_ids": [
+          "comp-lhvymvg4",
+          "comp-lhvymvg6"
+        ],
+        "source_container_id": "comp-lhvymvg11",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/en-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "Chang Qing",
+            "artist": "Played by 林旭文",
+            "url": "https://music.wixstatic.com/mp3/7a7959_599d2a81445d47bfa31f769f7fcae838-320.mp3",
+            "local_url": "/media/audio/7a7959_599d2a81445d47bfa31f769f7fcae838-320.mp3",
+            "duration": 466
+          }
+        ]
+      },
+      {
+        "component_id": "comp-lnhba3mo",
+        "source_text_ids": [
+          "comp-kyc9fszj",
+          "comp-kyc9fgy0"
+        ],
+        "source_container_id": "comp-kyc9ejl0",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/en-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "Lisao",
+            "artist": "Played by 林旭文",
+            "url": "https://music.wixstatic.com/mp3/7a7959_67a67ec3732440699dee5ba779605d1e.mp3",
+            "local_url": "/media/audio/7a7959_67a67ec3732440699dee5ba779605d1e.mp3",
+            "duration": 728
+          }
+        ]
+      },
+      {
+        "component_id": "comp-lauugyjo",
+        "source_text_ids": [
+          "comp-kyc9gyy2",
+          "comp-kyc9gyyz"
+        ],
+        "source_container_id": "comp-kyc9glr8",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/en-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "Daya",
+            "artist": "Played by Tse Chun-Yan",
+            "url": "https://music.wixstatic.com/mp3/7a7959_053504c82a9941099065c98c11406c96.mp3",
+            "local_url": "/media/audio/7a7959_053504c82a9941099065c98c11406c96.mp3",
+            "duration": 457
+          }
+        ]
+      },
+      {
+        "component_id": "comp-kycbqgik",
+        "source_text_ids": [
+          "comp-kyc9j1sx",
+          "comp-kyc9j1sv1"
+        ],
+        "source_container_id": "comp-kyc9j1st",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/en-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "Xuanmo",
+            "artist": "Played by Tse Chun-Yan",
+            "url": "https://music.wixstatic.com/mp3/7a7959_1bd11b7c45e648fda9efc9f10575b060.mp3",
+            "local_url": "/media/audio/7a7959_1bd11b7c45e648fda9efc9f10575b060.mp3",
+            "duration": 356
+          }
+        ]
+      },
+      {
+        "component_id": "comp-kycbk7zx",
+        "source_text_ids": [
+          "comp-kyc9lct5",
+          "comp-kyc9l6cj"
+        ],
+        "source_container_id": "comp-kyc9kg2v",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/en-reconstruction-features.json",
+        "url": "https://www.youtube.com/watch?v=NJbs1uctSY8&t=6s"
+      },
+      {
+        "component_id": "comp-kycbsgse",
+        "source_text_ids": [
+          "comp-kyc9n6en2",
+          "comp-kyc9n6eo3"
+        ],
+        "source_container_id": "comp-kyc9n6el",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/en-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "Weibin yin",
+            "artist": "Played by Tse Chun-Yan",
+            "url": "https://music.wixstatic.com/mp3/7a7959_4078f11e3559498083483e3f8c63aaff.mp3",
+            "local_url": "/media/audio/7a7959_4078f11e3559498083483e3f8c63aaff.mp3",
+            "duration": 212
+          }
+        ]
+      },
+      {
+        "component_id": "comp-kycbovpz",
+        "source_text_ids": [
+          "comp-kyc9ps5u2",
+          "comp-kyc9ps5v2"
+        ],
+        "source_container_id": "comp-kyc9ps5s",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/en-reconstruction-features.json",
+        "url": "https://www.youtube.com/watch?v=1q3WwkGfTrA"
+      },
+      {
+        "component_id": "comp-kycbnvb9",
+        "source_text_ids": [
+          "comp-kyc9qy3x2",
+          "comp-kyc9qy3y2"
+        ],
+        "source_container_id": "comp-kyc9qy3w",
+        "kind": "VideoPlayer",
+        "evidence": "inventory/raw/en-reconstruction-features.json",
+        "url": "https://www.youtube.com/watch?v=mH7qeByWqb0&t=38s"
+      },
+      {
+        "component_id": "comp-kycc966q",
+        "source_text_ids": [
+          "comp-kyc9vl2t1",
+          "comp-kyc9vl2v"
+        ],
+        "source_container_id": "comp-kyc9vl2r",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/en-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "Songyu beiqiu",
+            "artist": "Played by Tse Chun-Yan",
+            "url": "https://music.wixstatic.com/mp3/7a7959_5f2bd9aad86c466091daa5751b74a3b0.mp3",
+            "local_url": "/media/audio/7a7959_5f2bd9aad86c466091daa5751b74a3b0.mp3",
+            "duration": 393
+          }
+        ]
+      },
+      {
+        "component_id": "comp-kycbtecb",
+        "source_text_ids": [
+          "comp-kyca0w7b",
+          "comp-kyca0w7c3"
+        ],
+        "source_container_id": "comp-kyca0w782",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/en-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "Hangong qiu",
+            "artist": "Played by Tse Chun-Yan",
+            "url": "https://music.wixstatic.com/mp3/7a7959_7cbace995c3642869c2699c1e6b9c43c.mp3",
+            "local_url": "/media/audio/7a7959_7cbace995c3642869c2699c1e6b9c43c.mp3",
+            "duration": 438
+          }
+        ]
+      },
+      {
+        "component_id": "comp-kycbulfv",
+        "source_text_ids": [
+          "comp-kyca1to22",
+          "comp-kyca1to41"
+        ],
+        "source_container_id": "comp-kyca1to1",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/en-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "Dongting qiusi",
+            "artist": "Played by Wong Chun-Fung",
+            "url": "https://music.wixstatic.com/mp3/7a7959_792d82998362464fb3312c8f4ba6b8c1.mp3",
+            "local_url": "/media/audio/7a7959_792d82998362464fb3312c8f4ba6b8c1.mp3",
+            "duration": 260
+          }
+        ]
+      },
+      {
+        "component_id": "comp-kyhel7s8",
+        "source_text_ids": [
+          "comp-kyca2lxu4",
+          "comp-kyca2lxw"
+        ],
+        "source_container_id": "comp-kyca2lxt",
+        "kind": "MusicPlayer",
+        "evidence": "inventory/raw/en-reconstruction-features.json",
+        "tracks": [
+          {
+            "title": "Baixue",
+            "artist": "Played by Tse Chun-Yan",
+            "url": "https://music.wixstatic.com/mp3/7a7959_971f635e343940fda0265c5aedcd7a14.mp3",
+            "local_url": "/media/audio/7a7959_971f635e343940fda0265c5aedcd7a14.mp3",
+            "duration": 373
+          }
+        ]
+      }
+    ]
+  },
+  "covers": {
+    "comp-kums1gj1": {
+      "uri": "54385b_45d6f7a9cf1a4f42a8e78ced296af710~mv2.png",
+      "alt": "一閃燈花墮",
+      "local_url": "/media/images/54385b_45d6f7a9cf1a4f42a8e78ced296af710~mv2.png"
+    },
+    "comp-kums1gjo1": {
+      "uri": "54385b_852e4c17d1604a558701ff70737673ca~mv2.jpg",
+      "alt": "秋月清霜",
+      "local_url": "/media/images/54385b_852e4c17d1604a558701ff70737673ca~mv2.jpg"
+    },
+    "comp-kums1gjy": {
+      "uri": "54385b_460eed54880742babd6e298d545011e2~mv2.jpg",
+      "alt": "審律尋幽",
+      "local_url": "/media/images/54385b_460eed54880742babd6e298d545011e2~mv2.jpg"
+    },
+    "comp-l3ium4df": {
+      "uri": "7a7959_e9588c05b10a4cc9b1c0d02d039d66b7~mv2.png",
+      "alt": "蔡德允",
+      "local_url": "/media/images/7a7959_e9588c05b10a4cc9b1c0d02d039d66b7~mv2.png"
+    },
+    "comp-ma0gir8g": {
+      "uri": "7a7959_960f2a0f660640d8b9f5eddf683f25fd~mv2.png",
+      "alt": "book4.png",
+      "local_url": "/media/images/7a7959_960f2a0f660640d8b9f5eddf683f25fd~mv2.png"
+    }
+  },
+  "downloads": [
+    {
+      "local_url": "/media/audio/7a7959_cb9e5bdbbf4a48118fecb893f75c10d9-320.mp3",
+      "source_url": "https://music.wixstatic.com/mp3/7a7959_cb9e5bdbbf4a48118fecb893f75c10d9-320.mp3"
+    },
+    {
+      "local_url": "/media/audio/7a7959_81db303fc8dd4a50bc9ecaeb57160b57-320.mp3",
+      "source_url": "https://music.wixstatic.com/mp3/7a7959_81db303fc8dd4a50bc9ecaeb57160b57-320.mp3"
+    },
+    {
+      "local_url": "/media/audio/7a7959_321df54b8a574934940166dc315345e2.mp3",
+      "source_url": "https://music.wixstatic.com/mp3/7a7959_321df54b8a574934940166dc315345e2.mp3"
+    },
+    {
+      "local_url": "/media/audio/7a7959_b811a0b805a346fab4e253fc23347812.mp3",
+      "source_url": "https://music.wixstatic.com/mp3/7a7959_b811a0b805a346fab4e253fc23347812.mp3"
+    },
+    {
+      "local_url": "/media/audio/7a7959_bd945ef20398412b96f4c8528fff92c2.mp3",
+      "source_url": "https://music.wixstatic.com/mp3/7a7959_bd945ef20398412b96f4c8528fff92c2.mp3"
+    },
+    {
+      "local_url": "/media/audio/7a7959_99bae433a14e4081965c2981bf4ce21a.mp3",
+      "source_url": "https://music.wixstatic.com/mp3/7a7959_99bae433a14e4081965c2981bf4ce21a.mp3"
+    },
+    {
+      "local_url": "/media/audio/54385b_88769b00bd074733b3e88efa199c7f3d.mp3",
+      "source_url": "https://music.wixstatic.com/mp3/54385b_88769b00bd074733b3e88efa199c7f3d.mp3"
+    },
+    {
+      "local_url": "/media/audio/7a7959_eb8fca4c4b584513bc1a3e7931f035fa-320.mp3",
+      "source_url": "https://music.wixstatic.com/mp3/7a7959_eb8fca4c4b584513bc1a3e7931f035fa-320.mp3"
+    },
+    {
+      "local_url": "/media/audio/7a7959_7777f975bcef487d9066be50040e2394.mp3",
+      "source_url": "https://music.wixstatic.com/mp3/7a7959_7777f975bcef487d9066be50040e2394.mp3"
+    },
+    {
+      "local_url": "/media/audio/7a7959_5ce8f05799464b5daab827bca0e3486e.mp3",
+      "source_url": "https://music.wixstatic.com/mp3/7a7959_5ce8f05799464b5daab827bca0e3486e.mp3"
+    },
+    {
+      "local_url": "/media/audio/7a7959_f1b204aac8094d65a6b14270be518541.mp3",
+      "source_url": "https://music.wixstatic.com/mp3/7a7959_f1b204aac8094d65a6b14270be518541.mp3"
+    },
+    {
+      "local_url": "/media/audio/7a7959_599d2a81445d47bfa31f769f7fcae838-320.mp3",
+      "source_url": "https://music.wixstatic.com/mp3/7a7959_599d2a81445d47bfa31f769f7fcae838-320.mp3"
+    },
+    {
+      "local_url": "/media/audio/7a7959_67a67ec3732440699dee5ba779605d1e.mp3",
+      "source_url": "https://music.wixstatic.com/mp3/7a7959_67a67ec3732440699dee5ba779605d1e.mp3"
+    },
+    {
+      "local_url": "/media/audio/7a7959_053504c82a9941099065c98c11406c96.mp3",
+      "source_url": "https://music.wixstatic.com/mp3/7a7959_053504c82a9941099065c98c11406c96.mp3"
+    },
+    {
+      "local_url": "/media/audio/7a7959_1bd11b7c45e648fda9efc9f10575b060.mp3",
+      "source_url": "https://music.wixstatic.com/mp3/7a7959_1bd11b7c45e648fda9efc9f10575b060.mp3"
+    },
+    {
+      "local_url": "/media/audio/7a7959_4078f11e3559498083483e3f8c63aaff.mp3",
+      "source_url": "https://music.wixstatic.com/mp3/7a7959_4078f11e3559498083483e3f8c63aaff.mp3"
+    },
+    {
+      "local_url": "/media/audio/7a7959_5f2bd9aad86c466091daa5751b74a3b0.mp3",
+      "source_url": "https://music.wixstatic.com/mp3/7a7959_5f2bd9aad86c466091daa5751b74a3b0.mp3"
+    },
+    {
+      "local_url": "/media/audio/7a7959_7cbace995c3642869c2699c1e6b9c43c.mp3",
+      "source_url": "https://music.wixstatic.com/mp3/7a7959_7cbace995c3642869c2699c1e6b9c43c.mp3"
+    },
+    {
+      "local_url": "/media/audio/7a7959_792d82998362464fb3312c8f4ba6b8c1.mp3",
+      "source_url": "https://music.wixstatic.com/mp3/7a7959_792d82998362464fb3312c8f4ba6b8c1.mp3"
+    },
+    {
+      "local_url": "/media/audio/7a7959_971f635e343940fda0265c5aedcd7a14.mp3",
+      "source_url": "https://music.wixstatic.com/mp3/7a7959_971f635e343940fda0265c5aedcd7a14.mp3"
+    },
+    {
+      "local_url": "/media/images/7a7959_48926c570bcc4867943edef403304cee~mv2.jpg",
+      "source_url": "https://static.wixstatic.com/media/7a7959_48926c570bcc4867943edef403304cee~mv2.jpg"
+    },
+    {
+      "local_url": "/media/images/54385b_34b0d48f8850456f8c8758ba9cd98790~mv2.jpg",
+      "source_url": "https://static.wixstatic.com/media/54385b_34b0d48f8850456f8c8758ba9cd98790~mv2.jpg"
+    },
+    {
+      "local_url": "/media/images/54385b_45d6f7a9cf1a4f42a8e78ced296af710~mv2.png",
+      "source_url": "https://static.wixstatic.com/media/54385b_45d6f7a9cf1a4f42a8e78ced296af710~mv2.png"
+    },
+    {
+      "local_url": "/media/images/54385b_852e4c17d1604a558701ff70737673ca~mv2.jpg",
+      "source_url": "https://static.wixstatic.com/media/54385b_852e4c17d1604a558701ff70737673ca~mv2.jpg"
+    },
+    {
+      "local_url": "/media/images/54385b_460eed54880742babd6e298d545011e2~mv2.jpg",
+      "source_url": "https://static.wixstatic.com/media/54385b_460eed54880742babd6e298d545011e2~mv2.jpg"
+    },
+    {
+      "local_url": "/media/images/7a7959_e9588c05b10a4cc9b1c0d02d039d66b7~mv2.png",
+      "source_url": "https://static.wixstatic.com/media/7a7959_e9588c05b10a4cc9b1c0d02d039d66b7~mv2.png"
+    },
+    {
+      "local_url": "/media/images/7a7959_960f2a0f660640d8b9f5eddf683f25fd~mv2.png",
+      "source_url": "https://static.wixstatic.com/media/7a7959_960f2a0f660640d8b9f5eddf683f25fd~mv2.png"
+    }
+  ]
+}

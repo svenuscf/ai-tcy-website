@@ -1,32 +1,41 @@
 # Tse Chun Yan website rebuild
 
-Private working repository for rebuilding 謝俊仁古琴創作樂曲及打譜.
+Private design preview for 謝俊仁古琴創作樂曲及打譜. The live Wix site is unchanged.
 
-## Current stage
+## Preview locally
 
-Read-only source capture and inventory. The prototype has not yet been built.
-The existing Wix site remains live and unchanged.
+```sh
+python3 scripts/build_site.py
+python3 scripts/check_site.py
+python3 -m http.server 4317 --bind 127.0.0.1 --directory site
+```
 
-- `tse-chun-yan-website-redesign-codex-handoff.md`: project brief and content constraints.
-- `WORKLOG.md`: progress, verified findings, and remaining gaps.
-- `inventory/raw/`: captured public Chinese and English pages and sitemaps.
-- `inventory/content-baseline.json`: extracted text blocks and link references.
-- `inventory/wix-*-response.json`: read-only CMS schema and media metadata responses.
-- `scripts/build_inventory.py`: regenerate the public HTML inventory using Python 3.
+Open http://127.0.0.1:4317/. Chinese and English each have a homepage,
+compositions, reconstructions, CDs/books, and an academic paper library.
+The library provides publication-year navigation, full-text search, and expandable abstracts.
 
-## Content preservation
+## Source preservation and media
 
-Preserve all original Chinese and English text without rewriting or translating.
-Keep source IDs and links traceable. Media rights and individual score/recording
-relationships still need verification. Captured content is not granted a new license.
+All 250 original rich-text components retain their exact decoded text. Interface
+labels are separate. Original link targets are retained as provenance where local
+page navigation replaces a Wix page URL. Scores continue to link to their original PDFs.
 
-## Review and publishing
+Seven original images and 20 audio tracks are stored in `site/media/`. Thirteen
+original YouTube videos are embedded, with direct fallback links and original start
+times. Audio/video associations come from published Wix component structure;
+`inventory/media-manifest.json` records those associations and download URLs.
+Videos require YouTube access; no video files are rehosted. Media has no new license.
 
-The owner authorized this private repository on 2026-09-28. Review access for
-Mr Tse will be arranged later. No public preview, collaborator invitation, Wix
-change, DNS change, or production switch is authorized by repository creation.
+- `tse-chun-yan-website-redesign-codex-handoff.md`: original project brief.
+- `WORKLOG.md`: progress and remaining reconciliation work.
+- `inventory/raw/`: frozen public HTML and published component data.
+- `inventory/content-baseline.json`: exact text and source links.
+- `inventory/preview-source-map.json`: source-to-preview traceability.
+- `scripts/check_site.py`: verifies rendered text, source links, local paths, asset presence, and anchor nesting.
 
-## Next milestone
+## Review boundary
 
-Build a local academic paper library with year grouping, search, and expandable
-full abstracts after verifying bibliography and abstract boundaries against sources.
+Repository remains private; Mr Tse's access will be arranged later. No public
+hosting, Wix edits, DNS change, or production switch has been performed. This is a
+design review build. Hidden pages and the two native CMS collections still need
+reconciliation before a production migration can be declared complete.
