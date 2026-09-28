@@ -64,3 +64,10 @@ state, 2023 filter returns six, expand abstracts works. Mobile DOM at 390px has 
 horizontal overflow and navigation expands. Desktop homepage visually checked.
 YouTube playback for every video and every full audio track has not been audited.
 Native CMS records and potential hidden pages remain pending for migration completeness.
+
+## 2026-09-28 — Simplify homepage opening
+
+Removed the oversized qin close-up from both language homepages after owner feedback.
+Reduced the hero spacing and gave the title full width. The portrait and publication
+covers remain. Original downloaded image is retained in the media archive. Rebuilt
+all pages; the 250-block text/link and local-asset checks pass.
