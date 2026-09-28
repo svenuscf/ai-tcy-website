@@ -789,7 +789,7 @@
     "text_sha256": "b41eb383d8c0d0d41324a0b80dd6574d55f6963adc29a782e4c3da1bbe7b8d2a",
     "preview_url": "/en/",
     "preview_selector": "[data-source-id=\"comp-kyw9tprf\"]",
-    "status": "exact decoded text nodes verified against frozen public HTML; backend reconciliation pending"
+    "status": "owner-approved copyright year update: 2022 to 2026"
   },
   {
     "source_url": "https://www.tsechunyan.com/en/reconstruction",
@@ -1914,7 +1914,7 @@
     "text_sha256": "b1ffdbac614b6ecf18e1a0a3aa2b92fbf608a13a4a3e833ad23d902067f96e6e",
     "preview_url": "/",
     "preview_selector": "[data-source-id=\"comp-kyw9tprf\"]",
-    "status": "exact decoded text nodes verified against frozen public HTML; backend reconciliation pending"
+    "status": "owner-approved copyright year update: 2022 to 2026"
   },
   {
     "source_url": "https://www.tsechunyan.com/reconstruction",

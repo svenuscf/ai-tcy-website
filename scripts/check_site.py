@@ -50,7 +50,7 @@ for page in baseline['pages']:
     p=CheckedPage(); p.feed(dest.read_text())
     assert set(p.blocks)=={b['wix_id'] for b in page['blocks']}
     for b in page['blocks']:
-        assert p.blocks[b['wix_id']]['text']==b['text'], (dest,b['wix_id'],repr(p.blocks[b['wix_id']]['text'][-200:]),repr(b['text'][-200:]))
+        assert p.blocks[b['wix_id']]['text']==(b['text'].replace('© 2022','© 2026') if b['wix_id']=='comp-kyw9tprf' else b['text']), (dest,b['wix_id'],repr(p.blocks[b['wix_id']]['text'][-200:]),repr(b['text'][-200:]))
         assert p.blocks[b['wix_id']]['links']==[a['value'] for a in b['links'] if a['tag']=='a' and a['attribute']=='href'], (dest,b['wix_id'],'links')
         count+=1
     for path in p.local:
@@ -59,4 +59,4 @@ for page in baseline['pages']:
 manifest=json.loads((ROOT/'inventory/media-manifest.json').read_text())
 for asset in manifest['downloads']:
     assert (OUT/asset['local_url'].lstrip('/')).stat().st_size>1000
-print(f'PASS: 10 pages, {count} verbatim source blocks, no nested anchors, all local links/assets, {len(manifest["downloads"])} media files.')
+print(f'PASS: 10 pages, {count} source blocks (including two approved copyright updates), no nested anchors, all local links/assets, {len(manifest["downloads"])} media files.')

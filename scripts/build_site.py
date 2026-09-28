@@ -120,6 +120,8 @@ def fragment(nodes):
 
 def source(node, children=None, extra=''):
     content = fragment(node.children) if children is None else children
+    if node.attrs['id'] == 'comp-kyw9tprf':
+        content = content.replace('© 2022', '© 2026')  # Owner-approved copyright update.
     heading = ' role="heading" aria-level="1"' if extra in {'home-title','collection-title'} else ''
     return f'<div class="source {extra}" data-source-id="{node.attrs["id"]}"{heading}>{content}</div>'
 
@@ -151,7 +153,7 @@ def home(lang, blocks):
     return f'''<section class="home-hero wrap"><div class="hero-topline">TSE CHUN-YAN</div>{title}<a class="hero-link" href="{url(lang,'academic')}">{pair('瀏覽論文','Browse academic papers',lang)} <span aria-hidden="true">↗</span></a><div class="hero-bottom">{pair('創作 / 打譜 / 研究','COMPOSITIONS / RECONSTRUCTIONS / RESEARCH',lang)}<span>01 — 04</span></div></section>
 <section class="entry-grid wrap" aria-label="{pair('內容目錄','Explore the collection',lang)}">{cards}</section>
 <section class="biography wrap"><aside><div class="eyebrow">{pair('關於','ABOUT',lang)}</div>{source(blocks[1])}<img class="portrait" src="/media/images/7a7959_48926c570bcc4867943edef403304cee~mv2.jpg" alt="{pair('謝俊仁','TSE Chun-Yan',lang)}" loading="lazy"></aside><div class="prose">{source(blocks[2])}<div class="contact-links"><a href="mailto:tsecy1@gmail.com">{source(blocks[7])}</a><a href="https://www.youtube.com/channel/UCoFkDyAR1Ymf7_jFqSwCr0g" target="_blank" rel="noopener">{source(blocks[8])}</a></div></div></section>
-<section class="credits wrap">{source(blocks[9])}{source(blocks[10])}</section>'''
+<section class="credits wrap"><div>{source(blocks[9])}<p class="management-credit">{pair('本網站繼2022年改版後，現於2026年由AI助理管理及維護。','Following the 2022 redesign, this website is now managed and maintained by an AI assistant in 2026.',lang)}</p></div>{source(blocks[10])}</section>'''
 
 def academic(lang, blocks):
     papers = blocks[1:]
@@ -242,7 +244,7 @@ def main():
         for node,block in zip(parser.blocks,page['blocks']):
             assert node.attrs['id'] == block['wix_id']
             assert node.text == block['text'], (raw,block['wix_id'])
-            mapping.append({'source_url':page['source_url'],'source_id':block['wix_id'],'source_order':block['order'],'text_sha256':block['text_sha256'],'preview_url':url(lang,route),'preview_selector':f'[data-source-id="{block["wix_id"]}"]','status':'exact decoded text nodes verified against frozen public HTML; backend reconciliation pending'})
+            mapping.append({'source_url':page['source_url'],'source_id':block['wix_id'],'source_order':block['order'],'text_sha256':block['text_sha256'],'preview_url':url(lang,route),'preview_selector':f'[data-source-id="{block["wix_id"]}"]','status':('owner-approved copyright year update: 2022 to 2026' if block['wix_id']=='comp-kyw9tprf' else 'exact decoded text nodes verified against frozen public HTML; backend reconciliation pending')})
         body = home(lang,parser.blocks) if route == 'home' else academic(lang,parser.blocks) if route == 'academic' else collection(lang,route,parser.blocks)
         dest = OUT/url(lang,route).lstrip('/')/'index.html'
         dest.parent.mkdir(parents=True,exist_ok=True)

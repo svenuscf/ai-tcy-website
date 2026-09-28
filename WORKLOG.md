@@ -84,3 +84,12 @@ Pages deployment 36375858322 completed successfully. Live HTTPS URL:
 https://garywong.pro/tcy-review/. GitHub automatically inherited the account's
 existing custom domain; no DNS or domain settings changed. All ten live pages
 and CSS/JS return successfully; homepage browser rendering confirmed. Working repository stays private; Wix remains unchanged.
+
+## 2026-09-28 — Owner-approved credit update
+
+Updated both homepages to copyright 2026 and added an AI management and maintenance
+credit for 2026 following the 2022 redesign. Retained the original Lee Chee-Keung
+and Wong Chun-Fung acknowledgments, including the historical 2022 design date.
+Frozen source snapshots remain unchanged. Validation explicitly permits only the
+two copyright-year substitutions; the new management sentence is separate from
+source text. This supersedes verbatim preservation for the copyright year only.
