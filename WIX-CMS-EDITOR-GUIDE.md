@@ -1,17 +1,36 @@
 # Editing the staged website in Wix CMS
 
-The Wix staging site reads its regularly updated content from the **Website Content** CMS collection. Layout, typography, navigation and responsive behaviour remain protected in the codebase.
+The staged website reads regularly updated content from the **Website Content** CMS collection. Wix CMS works like a content table: each row is one Chinese or English entry, and each column controls part of that entry. The site's layout, typography, navigation and responsive behaviour remain in the codebase.
 
 - Staging preview: https://tse-chun-yan-qin-web-ajidom-1406.wix-site-host.com
-- Wix dashboard: https://manage.wix.com/dashboard/97afd415-1af3-4f6f-8c4c-d0a82d596996/database/collections
-- CMS collection: **Website Content** (`WebsiteContent`)
+- Website Content collection: https://manage.wix.com/dashboard/97afd415-1af3-4f6f-8c4c-d0a82d596996/wix-cms/data/WebsiteContent?referralInfo=sidebar
+- CMS collection name: **Website Content** (`WebsiteContent`)
 
-Sign in to the Wix account, open **CMS**, and select **Website Content**. Use the **Page** and **Language** columns to filter the list before editing.
+The production site at `tsechunyan.com` is not affected while work remains in staging.
+
+## Basic editing procedure
+
+1. Sign in to Wix and open the **Website Content** link above.
+2. Select **Filter** and choose the required **Page** and **Language**. Filtering first reduces the chance of editing the wrong language or section.
+3. Use **Search** to find the title, or locate the row in the filtered list.
+4. Edit the relevant cell. Open the row if Wix provides a larger editing form for rich text, images or media fields.
+5. Wait for Wix to finish saving. Most table edits autosave, but do not close the page while a saving indicator is visible.
+6. Open or refresh the staging preview and check both desktop and mobile layouts. For bilingual material, also check the other language page.
+
+The page identifiers used in the collection are:
+
+- `home`
+- `compositions`
+- `reconstruction`
+- `cds-and-books`
+- `academic`
+
+The language identifiers are `zh` for Chinese and `en` for English.
 
 ## Fields intended for ordinary editing
 
-- **Contents Title**: the title shown in the page contents list.
-- **Display Order**: the item's position on its page. Use whole numbers.
+- **Contents Title**: the label shown in the page's contents list.
+- **Display Order**: the item's position on its page. Use whole numbers and avoid duplicate values.
 - **Main Content**: formatted text, links and score-download links.
 - **Abstract**: the expandable abstract on the academic papers page.
 - **Publication Year**: the year used to group academic papers.
@@ -28,16 +47,86 @@ Sign in to the Wix account, open **CMS**, and select **Website Content**. Use th
 - **Language**
 - **Entry Key**
 
-These fields connect a CMS row to the correct bilingual page. Changing them can move an entry to another page or prevent it from appearing.
+These four fields connect a CMS row to the correct bilingual page. Changing them can move an entry to another page, create a duplicate, or prevent it from appearing. Each Chinese and English entry is a separate record; editing one does not automatically translate or update the other.
 
-## Common changes
+## Example: edit the biography
 
-To change the portrait, filter to `Page = home`, open the relevant Chinese and English profile rows, replace **Image**, and save. Both records currently use the same portrait.
+1. Filter **Page** to `home` and **Language** to `zh`.
+2. Open the record whose **Stable Record Key** is `home:zh:profile`.
+3. Edit **Main Content** and allow Wix to save.
+4. Refresh the Chinese staging homepage.
+5. Repeat with `home:en:profile` if the English biography also needs to change.
 
-To reorder a contents list, filter to the page and language, change **Display Order**, and save. The contents list and the entries use the same order automatically.
+Rich-text formatting and links should be edited inside the expanded field editor when available.
 
-To hide an entry temporarily, turn off **Visible on Website**. This is safer than deleting it.
+## Example: replace the portrait
 
-For a new composition, reconstruction, publication or paper, duplicate a similar row and ask the maintaining agent to assign a new stable key and check both language versions. The agent should also verify formatting, media, desktop and mobile display before publication.
+1. Filter **Page** to `home`.
+2. Open `home:zh:profile` and replace the **Image** with the new portrait.
+3. Set **Image Description** to a short description such as `謝俊仁`.
+4. Open `home:en:profile`, select the same image, and set the description to `TSE Chun-Yan`.
+5. Refresh the Chinese and English staging homepages.
+
+Updating both profile records keeps the portrait consistent when visitors switch languages.
+
+## Example: edit an existing composition
+
+1. Filter **Page** to `compositions` and **Language** to `zh`.
+2. Search for the title, for example `短松岡`.
+3. Change **Contents Title** if the contents-list label needs to change.
+4. Change **Main Content** for the description, formatted text or score links.
+5. Update **Audio URL**, **Audio Title** and **Performer / Credit** for a recording.
+6. Update **Video Embed URL** and **Video Page URL** for a video.
+7. Refresh the Chinese compositions page and test every changed link or player.
+8. Repeat on the corresponding `en` record when needed.
+
+For YouTube, **Video Embed URL** should normally use the embed form, such as `https://www.youtube.com/embed/VIDEO_ID`. **Video Page URL** can use the ordinary public watch-page URL.
+
+## Example: change the contents order
+
+1. Filter to one **Page** and one **Language**.
+2. Locate the two entries to move.
+3. Swap their **Display Order** values. For example, if one row is `3` and another is `4`, change `3` to a temporary unused number, change `4` to `3`, and then change the temporary number to `4`.
+4. Refresh the staging page and confirm that both the contents list and the article order changed.
+5. Repeat the same ordering change in the other language if the two versions should match.
+
+Avoid duplicate order numbers because their relative order may be unpredictable.
+
+## Example: hide and restore an entry
+
+1. Find the record using **Page**, **Language** and **Search**.
+2. Turn off **Visible on Website**.
+3. Refresh staging and confirm that the item and its contents-list link are gone.
+4. Turn the field on again to restore the item.
+
+This is safer than deleting a row and preserves all text and media information.
+
+## Example: edit an academic paper
+
+1. Filter **Page** to `academic` and select the language.
+2. Search for the paper title.
+3. Edit **Main Content** for the citation, title and links.
+4. Edit **Abstract** for the expandable abstract text.
+5. Change **Publication Year** if the paper belongs under another year heading.
+6. Refresh the academic page and test its abstract and links.
+7. Repeat for the other language record if required.
+
+## Example: edit a CD or book
+
+1. Filter **Page** to `cds-and-books` and select the language.
+2. Search for the publication title.
+3. Edit **Contents Title** and **Main Content**.
+4. Replace **Image** for the cover and update **Image Description**.
+5. Refresh staging and check the image crop, text and links.
+
+## Adding a new item
+
+Adding a new composition, reconstruction, publication or paper is more technical than editing an existing row. It requires a unique **Stable Record Key**, the correct **Entry Key**, ordering, formatted content, media checks and usually a matching record in the other language.
+
+The recommended procedure is to give the material to the maintaining AI agent, for example:
+
+> Add this as a new Chinese and English composition after “短松岡”. Use the attached score, audio recording and YouTube link. Leave the English description marked for review if the translation is uncertain.
+
+The agent can create the paired CMS records and verify links, ordering, desktop and mobile presentation. Dr Tse can comfortably use CMS for routine text edits, portrait and cover replacements, ordering, and hiding or restoring existing entries. Visual-design changes should continue through the code workflow.
 
 CMS edits appear after refreshing the staging page. The site retains the reviewed static content as a fallback if Wix CMS is temporarily unavailable.
