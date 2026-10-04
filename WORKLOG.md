@@ -123,3 +123,20 @@ bundle; four representative sources were verified on the released compositions
 page. Browser checks confirmed the Chinese homepage, English homepage, academic
 route, a two-result Chinese search for `康熙`, and abstract expansion. The production
 domain and existing live Wix site were not changed.
+
+## 2026-10-05 — Production cutover
+
+Dr Tse gave written approval to publish the redesign on the pre-existing domain and
+supplied the book QR code for verification. The QR decodes to
+`https://www.tsechunyan.com/`. Reassigned the existing Wix Core plan from the former
+Editor site to the Wix-managed Headless project; Wix also reassigned the domain to
+that project. No additional plan was purchased. The Core plan remains active through
+9 November 2028, and the separately billed domain renews on 7 March 2027. The former
+Editor site remains in the Wix account without the domain or Core plan as rollback
+reference.
+
+Removed preview-only labels, enabled `index,follow` for production, and released the
+final build. Verified the QR destination, HTTPS and canonical www redirects, all ten
+Chinese/English routes, all ten CMS feeds and their 176 records, the portrait, a
+representative Wix-hosted audio file, and a representative YouTube embed. The live
+site is now https://www.tsechunyan.com/.

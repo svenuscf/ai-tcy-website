@@ -38,7 +38,10 @@ def main() -> None:
     if (TARGET / "wix.config.json").exists():
         wix_config = (TARGET / "wix.config.json").read_text(encoding="utf-8")
     if TARGET.exists():
-        shutil.rmtree(TARGET)
+        for generated_dir in ("src", "public", "dist"):
+            path = TARGET / generated_dir
+            if path.exists():
+                shutil.rmtree(path)
     (TARGET / "src" / "pages").mkdir(parents=True)
     (TARGET / "public").mkdir()
 
@@ -64,6 +67,10 @@ def main() -> None:
         source = html_path.read_text(encoding="utf-8")
         for local_url, remote_url in replacements.items():
             source = source.replace(local_url, remote_url)
+        source = source.replace(
+            '<meta name="robots" content="noindex,nofollow">',
+            '<meta name="robots" content="index,follow">',
+        )
         if source.lower().startswith("<!doctype html>"):
             source = source[len("<!doctype html>") :]
         destination = TARGET / "src" / "pages" / route_name

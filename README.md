@@ -1,6 +1,7 @@
 # Tse Chun Yan website rebuild
 
-Private design preview for 謝俊仁古琴創作樂曲及打譜. The live Wix site is unchanged.
+Private source repository for the live 謝俊仁古琴創作樂曲及打譜 website.
+The Wix-managed Headless rebuild became the production site on 5 October 2026.
 
 ## Preview locally
 
@@ -35,10 +36,9 @@ Videos require YouTube access; no video files are rehosted. Media has no new lic
 - `inventory/preview-source-map.json`: source-to-preview traceability.
 - `scripts/check_site.py`: verifies rendered text, source links, local paths, asset presence, and anchor nesting.
 
-## Wix Headless staging and CMS
+## Wix Headless production and CMS
 
-The design is also released to Wix Headless staging at
-https://tse-chun-yan-qin-web-ajidom-1406.wix-site-host.com. Its bilingual profile,
+The production website is https://www.tsechunyan.com/. Its bilingual profile,
 catalogue entries, publications, papers, portrait and media fields are served from
 the Wix CMS collection `WebsiteContent`; the reviewed generated pages remain as a
 runtime fallback. See `WIX-CMS-EDITOR-GUIDE.md` for the safe editing workflow.
@@ -47,12 +47,14 @@ The reproducible CMS seeder is `scripts/seed_wix_cms.py`. It uses stable record
 keys and updates existing rows rather than creating duplicates. Authentication is
 provided at runtime and is never stored in the repository.
 
-## Review boundary
+## Publication status
 
 Repository remains private; Mr Tse's access will be arranged later. A separate public review is published as described below. No DNS
-change or production switch has been performed. This remains a
-staging review build. Hidden pages and the two original native CMS collections still need
-reconciliation before a production migration can be declared complete.
+change is required for routine CMS edits. The Core plan and `tsechunyan.com` domain
+are assigned to Wix project `97afd415-1af3-4f6f-8c4c-d0a82d596996`. The former
+Editor site remains in the Wix account without the production domain or plan as a
+rollback reference. Hidden pages and the two original native CMS collections remain
+items for later reconciliation.
 
 ## Public review export
 

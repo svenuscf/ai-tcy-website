@@ -142,10 +142,10 @@ def shell(lang, route, body):
     return f'''<!doctype html>
 <html lang="{'zh-Hant' if lang == 'zh' else 'en'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>{label} · {name}</title><link rel="stylesheet" href="/assets/style.css?v=3"><script defer src="/assets/app.js"></script></head>
 <body data-language="{lang}" data-page="{route}"><a class="skip" href="#main">{pair('跳至內容','Skip to content',lang)}</a>
-<div class="preview-bar"><span class="preview-dot"></span>{pair('設計預覽','Design preview',lang)}<span class="preview-note">{pair('原站內容 · 新版排版','Original content · New layout',lang)}</span></div>
+<div class="preview-bar"><span class="preview-dot"></span>{pair('謝俊仁官方網站','Official website of TSE Chun-Yan',lang)}<span class="preview-note">{pair('古琴創作 · 打譜 · 研究','Qin compositions · reconstructions · research',lang)}</span></div>
 <header class="site-header"><a class="brand" href="{url(lang)}"><span>{name}<small>{pair('古琴創作樂曲、打譜與論文','Qin compositions · Reconstructions · Papers',lang)}</small></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">{pair('目錄','Menu',lang)} <span aria-hidden="true">☰</span></button><nav id="site-nav" aria-label="{pair('主目錄','Main navigation',lang)}">{nav}</nav><a class="language" href="{url(other,route)}" lang="{other}">{pair('EN','繁中',lang)} <span aria-hidden="true">↗</span></a></header>
 <main id="main">{body}</main>
-<footer class="site-footer"><a class="footer-brand" href="{url(lang)}">{name}</a><span>{pair('設計預覽 · 原站文字與媒體','Design preview · Original text and media',lang)}</span><a href="#main">{pair('回到頁首','Back to top',lang)} ↑</a></footer></body></html>'''
+<footer class="site-footer"><a class="footer-brand" href="{url(lang)}">{name}</a><span>{pair('官方網站 · 2026','Official website · 2026',lang)}</span><a href="#main">{pair('回到頁首','Back to top',lang)} ↑</a></footer></body></html>'''
 
 def home(lang, blocks):
     title = source(blocks[0], extra='home-title')
@@ -228,7 +228,7 @@ def collection(lang, route, blocks):
             first = visible(record[1].text.split('\n')[0])
         links.append(f'<a href="#work-{i+1}"><span>{i+1:02}</span>{escape(first)}</a>')
         articles.append(f'<article class="work" id="work-{i+1}"><div class="work-number">{i+1:02} <span>↘</span></div><div class="work-body prose">'+''.join(source(n) for n in record)+work_media(lang,route,record,i)+'</div></article>')
-    return f'''<section class="page-hero wrap"><div class="eyebrow">0{index} / {LABELS['en'][index].upper()}</div>{title}</section><div class="collection-layout wrap"><aside class="work-rail"><h2>{pair('目錄','CONTENTS',lang)}</h2>{"".join(links)}<a class="source-site" href="https://www.tsechunyan.com/{'en/' if lang=='en' else ''}{route}" target="_blank" rel="noopener">{pair('原站媒體與演出','Media on the original site',lang)} ↗</a></aside><div class="works"><div class="collection-intro prose">{intro}</div>{"".join(articles)}</div></div>'''
+    return f'''<section class="page-hero wrap"><div class="eyebrow">0{index} / {LABELS['en'][index].upper()}</div>{title}</section><div class="collection-layout wrap"><aside class="work-rail"><h2>{pair('目錄','CONTENTS',lang)}</h2>{"".join(links)}</aside><div class="works"><div class="collection-intro prose">{intro}</div>{"".join(articles)}</div></div>'''
 
 def main():
     baseline = json.loads((ROOT/'inventory/content-baseline.json').read_text())
