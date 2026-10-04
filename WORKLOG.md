@@ -101,3 +101,25 @@ Includes portable build/export instructions, approved design and content decisio
 access/ownership boundaries, remaining migration gaps, and a practical maintenance
 workflow. Corrected outdated README statements about public hosting and copyright
 preservation. No website content or hosting changes in this documentation update.
+
+## 2026-10-04 — Full Wix Headless staging rebuild
+
+Replaced the first classic-Editor styling exercise with a new Wix-managed Headless
+staging project whose frontend is generated directly from the approved GitHub design.
+This preserves the complete ten-page Chinese/English information architecture,
+catalogue rails, paper search, year filtering, expandable abstracts, responsive
+navigation, portrait, cover art, video embeds, PDF links and 2026 credits.
+
+The first static-uploader proof reproduced the homepage but exposed a Wix routing
+limitation for nested folders. Added reproducible static and Astro exporters, wrapped
+the verified pages in a minimal Wix-linked Astro project, changed the Wix build to
+server output, and released the corrected site at:
+
+https://tse-chun-yan-qin-web-ajidom-1406.wix-site-host.com
+
+The project dashboard/site ID is `97afd415-1af3-4f6f-8c4c-d0a82d596996`. Audio is
+served from the existing Wix Media URLs rather than duplicated in the frontend
+bundle; four representative sources were verified on the released compositions
+page. Browser checks confirmed the Chinese homepage, English homepage, academic
+route, a two-result Chinese search for `康熙`, and abstract expansion. The production
+domain and existing live Wix site were not changed.

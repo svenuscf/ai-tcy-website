@@ -6,3 +6,7 @@ node_modules/
 __pycache__/
 *.pyc
 dist/
+.astro/
+.wix/
+wix-static-stage/
+wix-static-stage.zip

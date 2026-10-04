@@ -13,7 +13,7 @@ Help maintain 謝俊仁古琴創作樂曲及打譜, preserving Mr Tse's scholarl
 
 The review site is published through GitHub Pages. It inherits Gary's existing domain; `https://svenuscf.github.io/tcy-review/` redirects to that domain. No DNS change was made for this project.
 
-**The Wix website has not been changed. Mr Tse's design approval and approval to publish on Wix are still pending.** GitHub preview publication is not approval for a Wix migration. No automatic sync between GitHub and Wix exists.
+**A Wix-managed Headless staging rebuild now matches the GitHub preview. The production domain and existing live Wix site have not been changed.** The review URL is https://tse-chun-yan-qin-web-ajidom-1406.wix-site-host.com and its Wix project/site ID is `97afd415-1af3-4f6f-8c4c-d0a82d596996`. Approval of either preview is not approval to connect the production domain.
 
 The current review contains ten pages: home, compositions, reconstructions, CDs/books, and academic papers, in both Traditional Chinese and English. Each paper library has 49 entries with year navigation, full-text search, and expandable abstracts. Original score/PDF links still point to Wix. There are 20 local audio recordings, 13 embedded YouTube videos per language, and six displayed original images (portrait and five covers). A seventh downloaded image is archived but no longer displayed.
 
@@ -115,28 +115,51 @@ Cloudflare may rewrite email links and inject its email-decoding script in serve
 
 The preview includes `noindex,nofollow`; the export also has a robots exclusion. These discourage indexing but are not access control. The review site and public repository are accessible to anyone.
 
-## Before any Wix migration
+## Wix staging rebuild and production migration
 
-A GitHub Pages build cannot simply be uploaded into the existing Wix Editor as an editable replacement. Inspect the current Wix editor and available supported integrations first, then agree on the implementation route. Do not promise that an AI agent can perform every Editor operation automatically.
+A classic Wix Editor copy was tested and rejected because preserving the old section structure could not reproduce the approved design or catalogue features. The current staged implementation uses Wix-managed Headless hosting with an Astro wrapper around the verified generated pages. The frontend is maintained as code; Wix continues to provide the project dashboard and hosting. Ordinary page text is therefore not edited by dragging elements in the classic Wix Editor.
 
-1. Obtain Mr Tse's approval of the design and content, then confirm authorization for the chosen Wix implementation and eventual publication.
-2. Use authorized Wix access to inspect the current site, editor capabilities, pages, collections, media, and multilingual setup. Do not rely on old connection status from this conversation.
-3. Back up or duplicate the site where supported and establish a rollback route before changing the live version.
-4. Reconcile content completeness, including hidden pages and native CMS records, before declaring migration complete.
-5. Recreate and test the approved layout and features in a draft/staging version. Preserve existing URLs where possible and plan redirects for any approved URL changes.
-6. Verify mobile layout, both languages, the full paper library, audio/video, PDF links, contact links, accessibility, and relevant search metadata.
-7. Present the draft for review, then publish only within the owner's approved scope. GitHub review approval alone does not authorize DNS changes, account transfers, or changes to Gary's unrelated website.
+The reproducible staging source is `wix-astro-stage/`. `scripts/export_wix_astro.py` regenerates its pages and public assets from `site/`, replaces local audio references with the original Wix Media URLs, and preserves its `wix.config.json` link when present. From that directory, install dependencies, pull the environment, build and release with the Wix CLI.
+
+1. Obtain Mr Tse's approval of the staged design and content, then confirm authorization for the production-domain connection.
+2. Back up the existing live site and establish a rollback route before changing domain routing.
+3. Reconcile hidden pages and native collection records that may not appear in the public snapshot.
+4. Preserve the existing public paths or configure redirects for `/compositions`, `/reconstruction`, `/cds-and-books`, `/academic` and their English equivalents.
+5. Complete mobile, audio/video, PDF, accessibility and search-metadata checks on the Wix staging host.
+6. Connect the existing production domain only within the owner's explicitly approved scope.
 
 Do not choose Wix Headless or another hosting platform without discussing the implications for Mr Tse's editing and ownership workflow. The exact migration method remains undecided.
 
 ## Known gaps and practical limitations
 
 - The public HTML snapshot is a preservation baseline, not a complete Wix backend export.
-- Read-only Wix metadata and media listings were collected. Two native collections, `CDOilLampFlickered` and `Eng-Oil-Lamp`, were identified, but their records remain to be reconciled. Potential hidden pages remain unresolved.
+- Read-only Wix metadata and media listings were collected. On 28 September 2026, both native collections, `CDOilLampFlickered` and `Eng-Oil-Lamp`, were queried: each returned 11 album-track records with no next page. Their titles, score credits, and durations remain to be reconciled against the preview. Potential hidden pages remain unresolved.
 - Media associations were traced through published Wix component structure. Every complete audio track and every video's playback has not been audited.
 - PDFs still depend on the original Wix URLs; test and preserve them before any hosting change.
 - Previous browser checks covered a recording's play/pause, a YouTube thumbnail, paper search, no-results state, the 2023 filter, expanding abstracts, and mobile navigation/no overflow. These are not an exhaustive accessibility or cross-browser audit.
 - The public review is hosted under Gary's account and domain. Long-term ownership, access, and hosting arrangements for Mr Tse still need to be agreed.
+
+## Read-only Wix feasibility check — 28 September 2026
+
+Live site metadata confirms classic Wix Editor, a Premium plan, a custom domain, Velo enabled, and Wix Multilingual installed. This establishes candidate routes, not a tested implementation: no Editor layout was changed, no site was created, and nothing was published during this check.
+
+Three implementation options remain:
+
+- **Existing site with coded components:** provisionally 8–16 focused working hours. Reuse appropriate HTML/CSS/JavaScript through supported custom elements, retaining the site's Wix ownership and domain setup. First prove a representative bilingual page with audio, responsive layout, navigation and search metadata. Custom elements require explicit SEO handling and live-versus-preview testing. Their contents are maintained as code rather than normal drag-and-drop Editor elements. A failed pilot may require choosing a different route.
+- **New Wix Headless site:** provisionally 4–8 focused working hours, excluding account/domain-transfer delays. Reuses more of the static build, but changes the editing and deployment workflow and needs owner agreement. Wix's documented static uploader creates a new site; it does not replace an existing Editor site. Its limits are 3 MB per file and 20 MB total. Our local site is about 178.67 MB, or 3.82 MB without audio; 16 MP3 files exceed the per-file limit. Referencing verified existing Wix audio URLs could address this, subject to playback and long-term hosting checks. After claiming the uploaded site, subsequent updates require the Headless project/CLI workflow. Existing plan/domain eligibility must still be verified.
+- **Rebuild with native Wix Editor elements:** provisionally 16–32 focused working hours. Most suitable if ordinary visual editing is essential; requires more manual layout and bilingual feature reconstruction.
+
+These are planning ranges, not measured migration times or delivery commitments. They assume the approved ten-page design stays stable. Include collection reconciliation, media/PDF checks, both languages, mobile testing, URL/SEO review, staging review and a rollback/publication procedure. Hidden content, access restrictions, requested redesigns, or unsupported Editor operations may increase scope. Owner review and service waiting time are additional.
+
+For the existing-site coded-component route, reserve roughly **150–400 credits if using GPT-6 Sol at standard speed**. This is a token-budget scenario, not a fixed price or a conversion from hours. The published rates checked today are 50 credits per million uncached input tokens, 5 per million cached input tokens, and 250 per million output tokens. An illustrative 1–3 million uncached input, 5–15 million cached input and 0.2–0.6 million output tokens costs 125–375 credits; the planning allowance rounds upward. Actual context reuse, retries, tool output and model choice may differ substantially. GPT-6 Astra's corresponding rates are five times higher, so the same rounded allowance is **750–2,000 credits**. Included usage may cover some work before purchased credits are used. This is not an enforced spending cap.
+
+The account-wide balance returned during this check was approximately **757 credits**; it is a snapshot, not a project allocation or a guarantee of completion. Do not attribute account-wide balance changes solely to this project. Start with a representative page pilot and review actual consumption before committing to the full port. No subscription upgrade is established as necessary by this check.
+
+References:
+
+- [Wix custom elements](https://support.wix.com/en/article/wix-editor-adding-a-custom-element-to-your-site)
+- [Wix static website upload workflow and limits](https://dev.wix.com/docs/api-reference/account-level/sites/skills/upload-a-website-or-html-files)
+- [OpenAI Codex credit pricing](https://learn.chatgpt.com/docs/pricing)
 
 ## Running an assistant on Mr Tse's laptop
 
