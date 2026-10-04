@@ -10,9 +10,11 @@ from pathlib import Path
 import hashlib
 import json
 import re
+from datetime import datetime
 from urllib.parse import urlsplit, parse_qs
 
 ROOT = Path(__file__).resolve().parents[1]
+CURRENT_YEAR = datetime.now().year
 OUT = ROOT / 'site'
 MEDIA = json.loads((ROOT/'inventory/media-manifest.json').read_text())
 VOID = {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link', 'meta', 'param', 'source', 'track', 'wbr'}
@@ -121,7 +123,10 @@ def fragment(nodes):
 def source(node, children=None, extra=''):
     content = fragment(node.children) if children is None else children
     if node.attrs['id'] == 'comp-kyw9tprf':
-        content = content.replace('© 2022', '© 2026')  # Owner-approved copyright update.
+        content = content.replace(
+            '© 2022',
+            f'© 2022–<span data-current-year>{CURRENT_YEAR}</span>',
+        )  # Owner-approved rolling copyright range.
     heading = ' role="heading" aria-level="1"' if extra in {'home-title','collection-title'} else ''
     return f'<div class="source {extra}" data-source-id="{node.attrs["id"]}"{heading}>{content}</div>'
 
@@ -145,7 +150,7 @@ def shell(lang, route, body):
 <div class="preview-bar"><span class="preview-dot"></span>{pair('謝俊仁官方網站','Official website of TSE Chun-Yan',lang)}<span class="preview-note">{pair('古琴創作 · 打譜 · 研究','Qin compositions · reconstructions · research',lang)}</span></div>
 <header class="site-header"><a class="brand" href="{url(lang)}"><span>{name}<small>{pair('古琴創作樂曲、打譜與論文','Qin compositions · Reconstructions · Papers',lang)}</small></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">{pair('目錄','Menu',lang)} <span aria-hidden="true">☰</span></button><nav id="site-nav" aria-label="{pair('主目錄','Main navigation',lang)}">{nav}</nav><a class="language" href="{url(other,route)}" lang="{other}">{pair('EN','繁中',lang)} <span aria-hidden="true">↗</span></a></header>
 <main id="main">{body}</main>
-<footer class="site-footer"><a class="footer-brand" href="{url(lang)}">{name}</a><span>{pair('官方網站 · 2026','Official website · 2026',lang)}</span><a href="#main">{pair('回到頁首','Back to top',lang)} ↑</a></footer></body></html>'''
+<footer class="site-footer"><a class="footer-brand" href="{url(lang)}">{name}</a><span>{pair('官方網站','Official website',lang)} · <span data-current-year>{CURRENT_YEAR}</span></span><a href="#main">{pair('回到頁首','Back to top',lang)} ↑</a></footer></body></html>'''
 
 def home(lang, blocks):
     title = source(blocks[0], extra='home-title')

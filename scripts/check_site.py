@@ -3,7 +3,7 @@ import json
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit
-from build_site import ROOT, OUT, VOID
+from build_site import CURRENT_YEAR, ROOT, OUT, VOID
 
 class Page(HTMLParser):
     def __init__(self):
@@ -50,7 +50,10 @@ for page in baseline['pages']:
     p=CheckedPage(); p.feed(dest.read_text())
     assert set(p.blocks)=={b['wix_id'] for b in page['blocks']}
     for b in page['blocks']:
-        assert p.blocks[b['wix_id']]['text']==(b['text'].replace('© 2022','© 2026') if b['wix_id']=='comp-kyw9tprf' else b['text']), (dest,b['wix_id'],repr(p.blocks[b['wix_id']]['text'][-200:]),repr(b['text'][-200:]))
+        expected = b['text']
+        if b['wix_id'] == 'comp-kyw9tprf':
+            expected = expected.replace('© 2022', f'© 2022–{CURRENT_YEAR}')
+        assert p.blocks[b['wix_id']]['text']==expected, (dest,b['wix_id'],repr(p.blocks[b['wix_id']]['text'][-200:]),repr(expected[-200:]))
         assert p.blocks[b['wix_id']]['links']==[a['value'] for a in b['links'] if a['tag']=='a' and a['attribute']=='href'], (dest,b['wix_id'],'links')
         count+=1
     for path in p.local:

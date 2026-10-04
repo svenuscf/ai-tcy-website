@@ -1,6 +1,10 @@
 /* Interface controls and Wix CMS hydration. The reviewed static snapshot is
    retained as a fallback if Wix CMS is temporarily unavailable. */
 const menu = document.querySelector('.menu-toggle');
+const currentYear = String(new Date().getFullYear());
+document.querySelectorAll('[data-current-year]').forEach(element => {
+  element.textContent = currentYear;
+});
 menu?.addEventListener('click', () => {
   const open = menu.getAttribute('aria-expanded') !== 'true';
   menu.setAttribute('aria-expanded', String(open));
