@@ -5,13 +5,9 @@
   "scripts": {
     "build": "wix build",
     "dev": "wix dev",
-    "astro": "astro",
-    "wix": "wix",
     "preview": "wix preview",
     "release": "wix release",
-    "generate": "wix generate",
-    "env": "wix env",
-    "skills": "wix skills"
+    "env": "wix env"
   },
   "dependencies": {
     "astro": "^5.14.1",
@@ -26,8 +22,8 @@
     "@wix/cli": "^1.1.92",
     "@wix/astro": "^2.39.0",
     "@wix/astro-pages": "^2.0.4",
+    "@wix/astro-wix-hosting-adapter": "^2.0.0",
     "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "@wix/astro-wix-hosting-adapter": "^2.0.0"
+    "react-dom": "18.3.1"
   }
 }

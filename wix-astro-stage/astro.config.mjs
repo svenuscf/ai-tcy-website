@@ -7,8 +7,5 @@ export default defineConfig({
   output: 'server',
   integrations: [react(), wix(), wixPages()],
   adapter: wixHostingAdapter(),
-
-  image: {
-    domains: ['static.wixstatic.com']
-  }
+  image: { domains: ['static.wixstatic.com'] },
 });
