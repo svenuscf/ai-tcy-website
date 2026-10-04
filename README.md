@@ -35,11 +35,23 @@ Videos require YouTube access; no video files are rehosted. Media has no new lic
 - `inventory/preview-source-map.json`: source-to-preview traceability.
 - `scripts/check_site.py`: verifies rendered text, source links, local paths, asset presence, and anchor nesting.
 
+## Wix Headless staging and CMS
+
+The design is also released to Wix Headless staging at
+https://tse-chun-yan-qin-web-ajidom-1406.wix-site-host.com. Its bilingual profile,
+catalogue entries, publications, papers, portrait and media fields are served from
+the Wix CMS collection `WebsiteContent`; the reviewed generated pages remain as a
+runtime fallback. See `WIX-CMS-EDITOR-GUIDE.md` for the safe editing workflow.
+
+The reproducible CMS seeder is `scripts/seed_wix_cms.py`. It uses stable record
+keys and updates existing rows rather than creating duplicates. Authentication is
+provided at runtime and is never stored in the repository.
+
 ## Review boundary
 
-Repository remains private; Mr Tse's access will be arranged later. A separate public review is published as described below. No Wix edits, DNS
-change, or production switch has been performed. This is a
-design review build. Hidden pages and the two native CMS collections still need
+Repository remains private; Mr Tse's access will be arranged later. A separate public review is published as described below. No DNS
+change or production switch has been performed. This remains a
+staging review build. Hidden pages and the two original native CMS collections still need
 reconciliation before a production migration can be declared complete.
 
 ## Public review export

@@ -70,6 +70,38 @@ def main() -> None:
         destination.parent.mkdir(parents=True, exist_ok=True)
         destination.write_text(source, encoding="utf-8")
 
+    api_route = TARGET / "src" / "pages" / "api" / "content.json.ts"
+    api_route.parent.mkdir(parents=True, exist_ok=True)
+    api_route.write_text(
+        "import { items } from '@wix/data';\n\n"
+        "export const prerender = false;\n"
+        "const allowedPages = new Set(['home', 'compositions', 'reconstruction', 'cds-and-books', 'academic']);\n"
+        "const allowedLanguages = new Set(['zh', 'en']);\n\n"
+        "export async function GET({ url }: { url: URL }) {\n"
+        "  const pageKey = url.searchParams.get('pageKey') ?? '';\n"
+        "  const language = url.searchParams.get('language') ?? '';\n"
+        "  if (!allowedPages.has(pageKey) || !allowedLanguages.has(language)) {\n"
+        "    return new Response(JSON.stringify({ error: 'Invalid content request' }), { status: 400, headers: { 'content-type': 'application/json' } });\n"
+        "  }\n"
+        "  try {\n"
+        "    const result = await items.query('WebsiteContent')\n"
+        "      .eq('pageKey', pageKey)\n"
+        "      .eq('language', language)\n"
+        "      .eq('published', true)\n"
+        "      .ascending('sortOrder')\n"
+        "      .limit(100)\n"
+        "      .find();\n"
+        "    return new Response(JSON.stringify({ items: result.items }), {\n"
+        "      headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' },\n"
+        "    });\n"
+        "  } catch (error) {\n"
+        "    console.error('Unable to read WebsiteContent', error);\n"
+        "    return new Response(JSON.stringify({ error: 'CMS temporarily unavailable' }), { status: 503, headers: { 'content-type': 'application/json' } });\n"
+        "  }\n"
+        "}\n",
+        encoding="utf-8",
+    )
+
     package = {
         "name": "tse-chun-yan-wix-stage",
         "private": True,
@@ -83,6 +115,7 @@ def main() -> None:
         },
         "dependencies": {
             "astro": "^5.14.1",
+            "@wix/data": "^1.0.525",
             "@wix/sdk": "^1.15.23",
             "@wix/essentials": "^0.1.23",
             "@wix/dashboard": "^1.3.43",

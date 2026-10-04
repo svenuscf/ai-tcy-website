@@ -13,7 +13,7 @@ Help maintain 謝俊仁古琴創作樂曲及打譜, preserving Mr Tse's scholarl
 
 The review site is published through GitHub Pages. It inherits Gary's existing domain; `https://svenuscf.github.io/tcy-review/` redirects to that domain. No DNS change was made for this project.
 
-**A Wix-managed Headless staging rebuild now matches the GitHub preview. The production domain and existing live Wix site have not been changed.** The review URL is https://tse-chun-yan-qin-web-ajidom-1406.wix-site-host.com and its Wix project/site ID is `97afd415-1af3-4f6f-8c4c-d0a82d596996`. Approval of either preview is not approval to connect the production domain.
+**A Wix-managed Headless staging rebuild now matches the GitHub preview and reads maintainable content from Wix CMS. The production domain and existing live Wix site have not been changed.** The review URL is https://tse-chun-yan-qin-web-ajidom-1406.wix-site-host.com and its Wix project/site ID is `97afd415-1af3-4f6f-8c4c-d0a82d596996`. Approval of either preview is not approval to connect the production domain.
 
 The current review contains ten pages: home, compositions, reconstructions, CDs/books, and academic papers, in both Traditional Chinese and English. Each paper library has 49 entries with year navigation, full-text search, and expandable abstracts. Original score/PDF links still point to Wix. There are 20 local audio recordings, 13 embedded YouTube videos per language, and six displayed original images (portrait and five covers). A seventh downloaded image is archived but no longer displayed.
 
@@ -120,6 +120,8 @@ The preview includes `noindex,nofollow`; the export also has a robots exclusion.
 A classic Wix Editor copy was tested and rejected because preserving the old section structure could not reproduce the approved design or catalogue features. The current staged implementation uses Wix-managed Headless hosting with an Astro wrapper around the verified generated pages. The frontend is maintained as code; Wix continues to provide the project dashboard and hosting. Ordinary page text is therefore not edited by dragging elements in the classic Wix Editor.
 
 The reproducible staging source is `wix-astro-stage/`. `scripts/export_wix_astro.py` regenerates its pages and public assets from `site/`, replaces local audio references with the original Wix Media URLs, and preserves its `wix.config.json` link when present. From that directory, install dependencies, pull the environment, build and release with the Wix CLI.
+
+The staging site uses the native CMS collection **Website Content** (`WebsiteContent`). It contains 176 bilingual records for the profile, compositions, reconstructions, publications and academic papers. `scripts/seed_wix_cms.py` creates or updates those records by stable key, and `inventory/wix-cms-seed.json` records the verified seed result. The runtime endpoint `/api/content.json` reads published rows; the reviewed static HTML remains available as a fallback. See `WIX-CMS-EDITOR-GUIDE.md` before editing collection rows.
 
 1. Obtain Mr Tse's approval of the staged design and content, then confirm authorization for the production-domain connection.
 2. Back up the existing live site and establish a rollback route before changing domain routing.

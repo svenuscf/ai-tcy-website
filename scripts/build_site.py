@@ -141,7 +141,7 @@ def shell(lang, route, body):
     nav = ''.join(f'<a href="{url(lang,r)}"'+(' aria-current="page"' if route == r else '')+f'>{t}</a>' for r,t in zip(ROUTES,LABELS[lang]))
     return f'''<!doctype html>
 <html lang="{'zh-Hant' if lang == 'zh' else 'en'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>{label} · {name}</title><link rel="stylesheet" href="/assets/style.css?v=3"><script defer src="/assets/app.js"></script></head>
-<body data-language="{lang}"><a class="skip" href="#main">{pair('跳至內容','Skip to content',lang)}</a>
+<body data-language="{lang}" data-page="{route}"><a class="skip" href="#main">{pair('跳至內容','Skip to content',lang)}</a>
 <div class="preview-bar"><span class="preview-dot"></span>{pair('設計預覽','Design preview',lang)}<span class="preview-note">{pair('原站內容 · 新版排版','Original content · New layout',lang)}</span></div>
 <header class="site-header"><a class="brand" href="{url(lang)}"><span>{name}<small>{pair('古琴創作樂曲、打譜與論文','Qin compositions · Reconstructions · Papers',lang)}</small></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">{pair('目錄','Menu',lang)} <span aria-hidden="true">☰</span></button><nav id="site-nav" aria-label="{pair('主目錄','Main navigation',lang)}">{nav}</nav><a class="language" href="{url(other,route)}" lang="{other}">{pair('EN','繁中',lang)} <span aria-hidden="true">↗</span></a></header>
 <main id="main">{body}</main>
