@@ -1,5 +1,10 @@
 # Tse Chun Yan website — handoff for an AI assistant
 
+> **Status note, 5 October 2026:** This is the detailed migration-era handoff and
+> contains historical preview instructions. For the current production workflow,
+> repository status, CMS editing, Wix release procedure and disabled GitHub Pages
+> preview, read `FINAL-WORKFLOW-HANDOFF.md` first.
+
 Prepared 28 September 2026. This document may be shared with Mr Tse and his chosen assistant. It contains no credentials. Repository and account access must be granted separately; possession of this document does not grant access or authorize publication.
 
 ## Purpose and current status
@@ -7,11 +12,13 @@ Prepared 28 September 2026. This document may be shared with Mr Tse and his chos
 Help maintain 謝俊仁古琴創作樂曲及打譜, preserving Mr Tse's scholarly content while improving navigation and readability on desktop and mobile.
 
 - Existing live Wix website: https://www.tsechunyan.com/
-- Public design review: https://garywong.pro/tcy-review/
+- Former public design review (disabled; now 404): https://garywong.pro/tcy-review/
 - Private working repository: https://github.com/svenuscf/ai-tcy-website
 - Public deployment repository: https://github.com/svenuscf/tcy-review
 
-The review site is published through GitHub Pages. It inherits Gary's existing domain; `https://svenuscf.github.io/tcy-review/` redirects to that domain. No DNS change was made for this project.
+The review repository was previously published through GitHub Pages. Pages was
+unpublished and its source set to `None` after production cutover; pushing to the
+repository no longer publishes a website.
 
 **The Wix-managed Headless rebuild became the production site on 5 October 2026 and reads maintainable content from Wix CMS.** The public URL is https://www.tsechunyan.com/, its Wix-hosted address is https://tse-chun-yan-qin-web-ajidom-1406.wix-site-host.com, and its Wix project/site ID is `97afd415-1af3-4f6f-8c4c-d0a82d596996`. The former Editor site remains in the account as a rollback reference without the production domain or Core plan.
 
@@ -38,15 +45,15 @@ Gary has offered this current refresh without charge because the effort involved
 
 ### Approved acknowledgments changes
 
-Both homepages now use copyright **2026**. Preserve the historical 2022 credit to Mr Wong Chun-Fung and the score credit to Mr Lee Chee-Keung.
+Both homepages now use the automatic range **2022–current year**. Preserve the historical 2022 credit to Mr Wong Chun-Fung and the score credit to Mr Lee Chee-Keung.
 
 Chinese addition:
 
-> 本網站繼2022年改版後，現於2026年由AI助理管理及維護。
+> 本網站繼2022年改版後，於2026年重新設計及整理，現由AI助理協助管理及維護。
 
 English addition:
 
-> Following the 2022 redesign, this website is now managed and maintained by an AI assistant in 2026.
+> Following the 2022 redesign, this website was redesigned and reorganized in 2026 and is now managed and maintained with the assistance of an AI assistant.
 
 The frozen original copyright says 2022; the generator and checks explicitly allow that approved substitution. The AI management sentence is separate from the preserved source blocks. This wording does not mean an autonomous assistant is continuously running or monitoring the site.
 
@@ -93,7 +100,11 @@ Adding or removing papers needs more work than editing HTML: the current builder
 
 When adding media, confirm the exact work, performer, language placement, and allowed use. Keep an explicit source mapping. Use local authorized audio and images where appropriate; preserve YouTube embeds and fallback links. Do not download YouTube videos. Do not assume publicly viewable material has a new redistribution license.
 
-## Publishing an approved preview update
+## Retired GitHub preview workflow
+
+The GitHub Pages preview is disabled. The steps below are retained only as
+historical reference. Do not run them or re-enable Pages unless the owner asks for
+a new public preview.
 
 Use the existing repositories. Do not make the working repo public. Do not push the working repo's `main` branch to the public remote.
 

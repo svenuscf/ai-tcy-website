@@ -140,3 +140,12 @@ final build. Verified the QR destination, HTTPS and canonical www redirects, all
 Chinese/English routes, all ten CMS feeds and their 176 records, the portrait, a
 representative Wix-hosted audio file, and a representative YouTube embed. The live
 site is now https://www.tsechunyan.com/.
+
+## 2026-10-05 — Final maintenance handoff
+
+Unpublished the separate GitHub Pages review and set its source to `None`; the
+public review repository remains as a historical export. Added
+`FINAL-WORKFLOW-HANDOFF.md` as the current Traditional Chinese handoff covering
+Wix CMS editing, source structure, build and release, rollback, repositories,
+permissions and long-term maintenance. Copyright now displays `2022–current year`
+automatically, while the 2026 redesign statement remains a fixed historical fact.

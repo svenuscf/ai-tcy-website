@@ -58,10 +58,10 @@ items for later reconciliation.
 
 ## Public review export
 
-The owner authorized a separate public review on 2026-09-28. Public repo:
-https://github.com/svenuscf/tcy-review. Live review URL:
-https://garywong.pro/tcy-review/. GitHub Pages inherits the existing account
-custom domain; the github.io project URL redirects there.
+The owner authorized a separate public review on 2026-09-28. Its public repo is
+https://github.com/svenuscf/tcy-review. After the Wix production cutover, GitHub
+Pages was unpublished and its source set to `None` on 2026-10-05. The repository
+remains as a historical export; `https://garywong.pro/tcy-review/` now returns 404.
 
 `python3 scripts/export_review.py /private/tmp/tcy-review-publish` exports only
 website files and adjusts root-relative paths for the `/tcy-review` project URL.
@@ -71,5 +71,6 @@ working repository's inventory, notes, or git history into the public repo.
 
 ## Agent handoff
 
-See `AGENT-HANDOFF.md` for the shareable project status, maintenance workflow,
-publishing instructions, and Wix migration approval boundaries.
+Start with `FINAL-WORKFLOW-HANDOFF.md` for the current production status,
+maintenance workflow, repositories, Wix publishing and rollback procedure.
+`AGENT-HANDOFF.md` remains the detailed historical handoff from the migration.
