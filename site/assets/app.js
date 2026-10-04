@@ -66,7 +66,7 @@ function renderAcademic(items, language) {
   container.innerHTML = [...groups.entries()].map(([year, papers]) => {
     const rows = papers.map((item, index) => {
       const abstract = item.abstract ? `<details class="abstract"><summary data-interface="true">${language === 'zh' ? '閱讀摘要' : 'Read abstract'}<span aria-hidden="true">＋</span></summary><div class="abstract-body">${item.abstract}</div></details>` : '';
-      return `<article class="paper" id="${escapeHtml(item.entryKey)}" data-year="${escapeHtml(year)}"><span class="paper-index" aria-hidden="true">${String(item.sortOrder || index + 1).padStart(2, '0')}</span><div class="source">${item.body || ''}${abstract}</div></article>`;
+      return `<article class="paper" id="${escapeHtml(item.entryKey)}" data-year="${escapeHtml(year)}"><span class="paper-index" aria-hidden="true">${String(index + 1).padStart(2, '0')}</span><div class="source">${item.body || ''}${abstract}</div></article>`;
     }).join('');
     return `<section class="year-group" id="year-${escapeHtml(year)}" data-year="${escapeHtml(year)}"><div class="year-heading"><h2>${escapeHtml(year)}</h2><span>${String(papers.length).padStart(2, '0')}</span></div>${rows}</section>`;
   }).join('');

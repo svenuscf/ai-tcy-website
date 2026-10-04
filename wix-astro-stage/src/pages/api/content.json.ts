@@ -11,13 +11,13 @@ export async function GET({ url }: { url: URL }) {
     return new Response(JSON.stringify({ error: 'Invalid content request' }), { status: 400, headers: { 'content-type': 'application/json' } });
   }
   try {
-    const result = await items.query('WebsiteContent')
+    let query = items.query('WebsiteContent')
       .eq('pageKey', pageKey)
       .eq('language', language)
       .eq('published', true)
-      .ascending('sortOrder')
-      .limit(100)
-      .find();
+      .limit(100);
+    query = query.descending('sortOrder');
+    const result = await query.find();
     return new Response(JSON.stringify({ items: result.items }), {
       headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' },
     });

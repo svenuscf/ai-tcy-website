@@ -188,8 +188,10 @@ def work_records(page_key: str, language: str, path: Path) -> list[dict[str, obj
             if href.startswith("#work-"):
                 nav_titles[href[1:]] = clean_text(link.text.lstrip("0123456789 "))
     records = []
-    for order, article in enumerate(root.all(tag="article", cls="work"), 1):
-        entry_key = article.attrs.get("id", f"work-{order}")
+    articles = root.all(tag="article", cls="work")
+    for position, article in enumerate(articles, 1):
+        entry_key = article.attrs.get("id", f"work-{position}")
+        order = (len(articles) - position + 1) * 10
         body = article.first(cls="work-body")
         content_parts: list[str] = []
         if body:
@@ -221,8 +223,10 @@ def work_records(page_key: str, language: str, path: Path) -> list[dict[str, obj
 def paper_records(language: str, path: Path) -> list[dict[str, object]]:
     root = parse(path)
     records = []
-    for order, article in enumerate(root.all(tag="article", cls="paper"), 1):
-        entry_key = article.attrs.get("id", f"paper-{order}")
+    articles = root.all(tag="article", cls="paper")
+    for position, article in enumerate(articles, 1):
+        entry_key = article.attrs.get("id", f"paper-{position}")
+        order = (len(articles) - position + 1) * 10
         source = article.first(cls="source")
         details = source.first(tag="details", cls="abstract") if source else None
         abstract = details.first(cls="abstract-body") if details else None
@@ -259,7 +263,7 @@ def profile_record(language: str, path: Path, portrait_url: str) -> dict[str, ob
         "pageKey": "home",
         "language": language,
         "entryKey": "profile",
-        "sortOrder": 1,
+        "sortOrder": 10,
         "title": "關於謝俊仁" if language == "zh" else "About TSE Chun-Yan",
         "body": inner(source),
         "imageUrl": portrait_url,

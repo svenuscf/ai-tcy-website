@@ -30,7 +30,7 @@ The language identifiers are `zh` for Chinese and `en` for English.
 ## Fields intended for ordinary editing
 
 - **Contents Title**: the label shown in the page's contents list.
-- **Display Order**: the item's position on its page. Wix sorts this as a number, so an item can be inserted between `5` and `6` using `5.5`. Avoid duplicate values.
+- **Display Order**: the item's sorting priority. Every content section uses newest-first ordering, so a new item receives a number higher than the current maximum. Avoid duplicate values.
 - **Main Content**: formatted text, links and score-download links.
 - **Abstract**: the expandable abstract on the academic papers page.
 - **Publication Year**: the year used to group academic papers.
@@ -85,11 +85,11 @@ For YouTube, **Video Embed URL** should normally use the embed form, such as `ht
 ## Example: change the contents order
 
 1. Filter to one **Page** and one **Language**.
-2. Locate the two entries to move.
-3. To insert a new item between orders `5` and `6`, give it the order `5.5`. The website will still display normal sequential labels such as `05`, `06` and `07` because those labels are calculated after sorting.
-4. For easier long-term maintenance, the orders can be spaced once as `10`, `20`, `30` and so on. A later item can then be inserted using `15`, `25` or another number in the gap.
+2. For a new item, find the current highest **Display Order** on that page and add `10`. For example, if the newest existing composition is `150`, set the new one to `160`. Because all content sections sort in descending order, it will appear first automatically.
+3. To place an item between orders `140` and `130`, use a value such as `135`.
+4. The same newest-first rule applies to compositions, reconstructions, CDs and books, and academic papers.
 5. Refresh the staging page and confirm that both the contents list and the article order changed.
-6. Repeat the same ordering change in the other language if the two versions should match.
+6. Repeat the same ordering value in the other language if the two versions should match.
 
 Avoid duplicate order numbers because their relative order may be unpredictable.
 
