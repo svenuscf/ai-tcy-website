@@ -72,6 +72,7 @@ AI agent 不應自行改寫學術內容、翻譯缺少的英文稿、改動署�
 - `inventory/content-baseline.json`：原始文字、連結和 hash 基準。
 - `inventory/media-manifest.json`：圖片、錄音、影片及來源對應。
 - `WORKLOG.md`：歷史操作與決定。
+- `R2-MEDIA-MIGRATION.md`：Cloudflare R2 pilot、媒體路徑、驗證結果及日後完整遷移程序。
 
 不要只修改 `site/**/index.html` 或 `wix-astro-stage/src/pages/*.astro`；這些是產生檔，下次 build 會被覆寫。應修改 generator、CSS、JavaScript 或 CMS，再重新產生。
 
@@ -186,3 +187,5 @@ WebsiteContent CMS，私人 GitHub repository 保存設計和發布程式。保�
 謝老師可使用 Wix CMS 處理現有項目的文字、圖片及顯示狀態。大型更新交由能登入 Wix 並操作此 repository 的 agent。若香港地區的 agent 服務選擇有變，repository、CMS schema 和本文件仍可交給另一個工具；不要把維護能力綁定於單一 AI 供應商。
 
 在 2028 年 Wix plan 續期前，重新評估繼續使用 Wix Headless，或把程式網站遷移到其他 hosting。無論選擇哪一個平台，先保留 domain、URL 路徑、QR code 目標、CMS 資料、PDF 和媒體連結。
+
+2026 年 10 月 5 日已建立 Cloudflare R2 bucket `tsechunyan-media`，並以 MP3、PDF 和 JPEG 完成公開讀取及音訊 byte-range pilot。現時 Wix 正式網站尚未改用 R2；完整遷移及 `media.tsechunyan.com` 設定見 [`R2-MEDIA-MIGRATION.md`](R2-MEDIA-MIGRATION.md)。

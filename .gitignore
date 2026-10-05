@@ -10,3 +10,6 @@ dist/
 .wix/
 wix-static-stage/
 wix-static-stage.zip
+
+.env.r2.local
+inventory/r2-pilot-upload/
