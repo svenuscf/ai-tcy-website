@@ -4,6 +4,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit
 from build_site import CURRENT_YEAR, ROOT, OUT, VOID
+from seed_wix_cms import work_records
 
 class Page(HTMLParser):
     def __init__(self):
@@ -62,4 +63,13 @@ for page in baseline['pages']:
 manifest=json.loads((ROOT/'inventory/media-manifest.json').read_text())
 for asset in manifest['downloads']:
     assert (OUT/asset['local_url'].lstrip('/')).stat().st_size>1000
+
+# Prevent CMS migration from collapsing the three-track Confucius playlist into
+# the legacy single-audio fields.
+for language, path in (
+    ('zh', OUT/'compositions'/'index.html'),
+    ('en', OUT/'en'/'compositions'/'index.html'),
+):
+    record = next(item for item in work_records('compositions', language, path) if '63' in str(item['title']))
+    assert len(record['audioTracks']['tracks']) == 3, (language, record.get('audioTracks'))
 print(f'PASS: 10 pages, {count} source blocks (including two approved copyright updates), no nested anchors, all local links/assets, {len(manifest["downloads"])} media files.')

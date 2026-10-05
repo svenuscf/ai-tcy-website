@@ -149,3 +149,15 @@ public review repository remains as a historical export. Added
 Wix CMS editing, source structure, build and release, rollback, repositories,
 permissions and long-term maintenance. Copyright now displays `2022–current year`
 automatically, while the 2026 redesign statement remains a fixed historical fact.
+
+## 2026-10-05 — Multi-track CMS migration fix
+
+Fixed a production-only porting defect on the composition
+`Confucius 63/Confucius: 63 Revisited`. The preserved static page contained all
+three original Wix tracks, but the first CMS schema supported only one audio URL,
+so CMS hydration replaced the complete playlist with track 1. Added the structured
+`audioTracks` object field, migrated only the two affected Chinese and English CMS
+records, and taught the frontend to render every ordered track while retaining the
+legacy single-track fields. A regression assertion now confirms three tracks in
+both languages. Verified three live players per language and HTTP 206 responses
+from all three Wix Media sources.

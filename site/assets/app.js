@@ -23,8 +23,17 @@ const escapeHtml = value => String(value ?? '').replace(/[&<>"]/g, character => 
 
 function mediaHtml(item, language) {
   const parts = [];
-  if (item.audioUrl) {
-    parts.push(`<div class="recording"><div class="recording-label"><span aria-hidden="true">♫</span><strong>${escapeHtml(item.audioTitle || item.title)}</strong><span>${escapeHtml(item.audioCredit || '')}</span></div><audio controls preload="none" src="${escapeHtml(item.audioUrl)}" aria-label="${escapeHtml(item.audioTitle || item.title)}"><a href="${escapeHtml(item.audioUrl)}">${escapeHtml(item.audioTitle || item.title)}</a></audio></div>`);
+  let audioTracks = item.audioTracks;
+  if (typeof audioTracks === 'string') {
+    try { audioTracks = JSON.parse(audioTracks); } catch { audioTracks = null; }
+  }
+  const tracks = Array.isArray(audioTracks?.tracks) && audioTracks.tracks.length
+    ? audioTracks.tracks
+    : (item.audioUrl ? [{ url: item.audioUrl, title: item.audioTitle, credit: item.audioCredit }] : []);
+  for (const track of tracks) {
+    const title = track.title || item.title;
+    const credit = track.credit ? `<span>${escapeHtml(track.credit)}</span>` : '';
+    parts.push(`<div class="recording"><div class="recording-label"><span aria-hidden="true">♫</span><strong>${escapeHtml(title)}</strong>${credit}</div><audio controls preload="none" src="${escapeHtml(track.url)}" aria-label="${escapeHtml(title)}"><a href="${escapeHtml(track.url)}">${escapeHtml(title)}</a></audio></div>`);
   }
   if (item.videoEmbedUrl) {
     const watchLabel = language === 'zh' ? '在 YouTube 觀看 ↗' : 'Watch on YouTube ↗';

@@ -67,6 +67,8 @@ AI agent 不應自行改寫學術內容、翻譯缺少的英文稿、改動署�
 - `scripts/export_wix_astro.py`：把已驗證的 `site/` 包裝成 Wix Astro project。
 - `wix-astro-stage/`：Wix Headless 正式部署來源。
 - `scripts/seed_wix_cms.py`：以 stable key 建立或更新 CMS 記錄，不應產生重複項目。
+- `scripts/migrate_multi_track_audio.py`：只為含多條錄音的作品建立及更新
+  `audioTracks` CMS 欄位，避免 playlist 被簡化成單一播放器。
 - `inventory/content-baseline.json`：原始文字、連結和 hash 基準。
 - `inventory/media-manifest.json`：圖片、錄音、影片及來源對應。
 - `WORKLOG.md`：歷史操作與決定。
@@ -74,6 +76,11 @@ AI agent 不應自行改寫學術內容、翻譯缺少的英文稿、改動署�
 不要只修改 `site/**/index.html` 或 `wix-astro-stage/src/pages/*.astro`；這些是產生檔，下次 build 會被覆寫。應修改 generator、CSS、JavaScript 或 CMS，再重新產生。
 
 CMS API endpoint 為 `/api/content.json`。正式頁面優先顯示 Wix CMS 已發布的記錄；如 CMS 暫時無法讀取，頁面會使用已審核的靜態內容作 fallback。
+
+多條錄音的作品使用 `Audio Tracks (agent-managed)` 結構化欄位。普通的
+`Audio URL`、`Audio Title` 和 `Performer / Credit` 仍保留作單曲目編輯。
+2026 年 10 月 5 日已修復《孔子63》/《孔子．回首63》配樂在 CMS
+migration 後只剩第 1 條錄音的問題；中英文頁面現均顯示第 1、2、3 條。
 
 ## 5. 本機建置及檢查
 

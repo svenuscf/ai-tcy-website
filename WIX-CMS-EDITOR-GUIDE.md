@@ -37,6 +37,9 @@ The language identifiers are `zh` for Chinese and `en` for English.
 - **Publication Year**: the year used to group academic papers.
 - **Visible on Website**: turn this off to hide an item without deleting it.
 - **Audio URL**, **Audio Title**, **Performer / Credit**: recording details.
+- **Audio Tracks (agent-managed)**: ordered multi-track playlist data. Leave this
+  structured field to the maintaining agent; it is used when one work contains
+  more than one audio player.
 - **Video Embed URL**, **Video Page URL**: embedded video and its fallback link.
 - **Image** and **Image Description**: portrait or publication cover and accessible description.
 - **Editor Note**: an internal note; it is not displayed on the website.

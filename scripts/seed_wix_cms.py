@@ -153,17 +153,30 @@ def find_direct(node: Element, *, tag: str | None = None, cls: str | None = None
 
 def media_fields(work_body: Element) -> dict[str, object]:
     result: dict[str, object] = {}
-    audio = work_body.first(tag="audio")
-    if audio:
+    tracks: list[dict[str, str]] = []
+    for recording in work_body.all(cls="recording"):
+        audio = recording.first(tag="audio")
+        if not audio:
+            continue
         audio_url = audio.attrs.get("src", "")
-        result["audioUrl"] = AUDIO_URLS.get(audio_url, audio_url)
-        label = work_body.first(cls="recording-label")
-        if label:
-            strong = label.first(tag="strong")
-            spans = label.all(tag="span")
-            result["audioTitle"] = clean_text(strong.text if strong else "")
-            if spans:
-                result["audioCredit"] = clean_text(spans[-1].text)
+        label = recording.first(cls="recording-label")
+        strong = label.first(tag="strong") if label else None
+        credit_spans = [
+            span for span in (label.all(tag="span") if label else [])
+            if span.attrs.get("aria-hidden") != "true"
+        ]
+        tracks.append({
+            "url": AUDIO_URLS.get(audio_url, audio_url),
+            "title": clean_text(strong.text if strong else audio.attrs.get("aria-label", "")),
+            "credit": clean_text(credit_spans[-1].text) if credit_spans else "",
+        })
+    if tracks:
+        # Preserve the familiar single-track CMS fields while retaining complete
+        # Wix playlists in a structured field for the frontend.
+        result["audioUrl"] = tracks[0]["url"]
+        result["audioTitle"] = tracks[0]["title"]
+        result["audioCredit"] = tracks[0]["credit"]
+        result["audioTracks"] = {"tracks": tracks}
     iframe = work_body.first(tag="iframe")
     if iframe:
         result["videoEmbedUrl"] = iframe.attrs.get("src", "")
@@ -347,6 +360,7 @@ def create_collection(token: str, site_id: str) -> None:
         ("audioUrl", "Audio URL", "URL", False),
         ("audioTitle", "Audio Title", "TEXT", False),
         ("audioCredit", "Performer / Credit", "TEXT", False),
+        ("audioTracks", "Audio Tracks (agent-managed)", "OBJECT", False),
         ("videoEmbedUrl", "Video Embed URL", "URL", False),
         ("videoWatchUrl", "Video Page URL", "URL", False),
         ("imageUrl", "Image", "IMAGE", False),
