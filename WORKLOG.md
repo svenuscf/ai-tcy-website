@@ -1,5 +1,15 @@
 # Redesign work log
 
+## 2026-10-24 — Future media uploads target the new site
+
+The owner reports that another agent fixed the missing Media Library migration.
+This documentation update does not independently audit that migration. Updated
+AGENTS.md, FINAL-WORKFLOW-HANDOFF.md and WIX-CMS-EDITOR-GUIDE.md to require future
+image, audio and PDF uploads to the production Headless site's Media Library
+(`97afd415-1af3-4f6f-8c4c-d0a82d596996`), never the old Editor site's library.
+Use the returned URLs / media IDs in the relevant bilingual CMS records and verify
+live rendering, playback or downloads. The R2 pilot is not the routine upload target.
+
 ## 2026-09-28 — private GitHub repository
 
 User approved creating `svenuscf/ai-tcy-website` as private and uploading the

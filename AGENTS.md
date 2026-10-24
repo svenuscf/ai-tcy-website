@@ -12,6 +12,7 @@
 ## Git 與 Wix CMS 的分工
 
 - Git 保存設計、程式、靜態 fallback 和操作記錄；Wix `WebsiteContent` CMS 保存正式內容。`git pull` 不會同步 CMS。
+- 新增或替換的圖片、錄音、PDF 等媒體，一律上傳至新版 Headless site `97afd415-1af3-4f6f-8c4c-d0a82d596996` 的 Wix Media Library／Media Manager。上傳前核對 site ID；不可上傳到舊 Editor site `aac32e79-b06c-4e40-bf49-8cb31b2ebc69`，也不可自行改用 R2。使用新媒體庫回傳的 URL／media ID 更新相關 CMS 欄位或連結，並檢查中英文頁面及實際播放／下載。
 - 修改 CMS 前即時讀取目標記錄，核對 site ID、stable key、語言及目前值；只更新本次需要的欄位，保留其他欄位及媒體對應。
 - 更新前重新檢查記錄有否被另一位編輯者修改；若 API 支援 revision／條件更新則使用。發現差異時整合或請使用者決定，不以舊快照覆蓋。沒有條件更新時，避免兩邊同時編輯同一記錄。
 - 不可為一般內容修改直接執行 `scripts/seed_wix_cms.py` 或用本機舊資料重建整個 collection。確有批次遷移需要時，先備份最新 CMS、列出差異及限定目標，取得該次批次更新授權。

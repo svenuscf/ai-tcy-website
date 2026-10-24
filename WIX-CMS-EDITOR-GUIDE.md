@@ -65,6 +65,8 @@ Rich-text formatting and links should be edited inside the expanded field editor
 
 ## Example: replace the portrait
 
+Upload all new or replacement images, audio recordings and PDFs to the **new Headless site's Media Library / Media Manager**, site ID `97afd415-1af3-4f6f-8c4c-d0a82d596996`. Check the target site before uploading; do not use the former Editor site's library (`aac32e79-b06c-4e40-bf49-8cb31b2ebc69`). Use the returned media URL / ID in the appropriate CMS fields or download links, update both languages where applicable, and test the live image, player or download. The R2 pilot is not the destination for routine uploads.
+
 1. Filter **Page** to `home`.
 2. Open `home:zh:profile` and replace the **Image** with the new portrait.
 3. Set **Image Description** to a short description such as `謝俊仁`.
